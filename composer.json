@@ -1,0 +1,23 @@
+{
+  "name": "mihkullorg/lhv-connect",
+  "description": "LHV bank's CONNECT service ",
+  "keywords": ["lhv","lhv-connect", "connect", "lhv-bank", "bank"],
+  "homepage": "https://github.com/mihkullorg/lhv-connect",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mihkel Allorg",
+      "email": "mihkel.allorg@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "LhvConnect\\": "src/"
+    }
+  }
+}
