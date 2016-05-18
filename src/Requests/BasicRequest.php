@@ -5,6 +5,7 @@ namespace LhvConnect\Request;
 use Exception;
 use ForbiddenException;
 use GuzzleHttp\Client;
+use LhvConnect\Exceptions\ServiceUnavailableException;
 use LhvConnect\ResponseCode;
 use Psr\Http\Message\ResponseInterface;
 

@@ -2,6 +2,8 @@
 
 namespace LhvConnect\Request;
 
+use DateInterval;
+use DateTime;
 use LhvConnect\Tags;
 
 class AccountStatementRequest extends FullRequest {
@@ -15,14 +17,21 @@ class AccountStatementRequest extends FullRequest {
 
     protected $xmlTag = Tags::ACCOUNT_STATEMENT_REQUEST;
     protected $xmlFormat = "camt.060.001.03";
+
+    protected $rules = [
+        'IBAN' => 'required',
+        'FROM_DATE' => 'date',
+        'TO_DATE' => 'date'
+    ];
+
     protected $fields = [
-        'REQUEST_IDENTIFICATION' => "",
+        'MESSAGE_IDENTIFICATION' => "",
         'CREATION_DATETIME' => "",
         'IBAN' => "",
         'FROM_DATE' => "",
         'TO_DATE' => "",
-        'FROM_TIME' => "",
-        'TO_TIME' => "",
+        'TYPE' => "",
+        'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => ""
     ];
 
     protected $xml = [
@@ -32,7 +41,6 @@ class AccountStatementRequest extends FullRequest {
                 'CREATION_DATETIME' => "",
             ],
             'REPORTING_REQUEST' => [
-                'REQUEST_IDENTIFICATION' => "",
                 'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
                 'ACCOUNT' => [
                     'ACCOUNT_IDENTIFICATION' => [
@@ -47,10 +55,6 @@ class AccountStatementRequest extends FullRequest {
                         'FROM_DATE' => "",
                         'TO_DATE' => ""
                     ],
-                    'FROM_TO_TIME' => [
-                        'FROM_TIME' => "",
-                        'TO_TIME' => "",
-                    ],
                     'TYPE' => ""
                 ],
             ],
@@ -59,6 +63,24 @@ class AccountStatementRequest extends FullRequest {
 
     protected function handleMessage($message)
     {
-        // TODO: Implement handleMessage() method.
+        return $message;
+    }
+
+    protected function prepareFields()
+    {
+        $this->fields['MESSAGE_IDENTIFICATION'] = $this->msgId;
+        
+        $dateTime = new DateTime(); // It's now
+        $this->fields['CREATION_DATETIME'] = $dateTime::ISO8601;
+        $this->fields['FROM_DATE'] = $dateTime->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month
+        $this->fields['TO_DATE'] = $dateTime->format('Y-m-d');
+
+        $this->fields['TYPE'] = "ALLL";
+        $this->fields['REQUESTED_MESSAGE_NAME_IDENTIFICATION'] = $this->xmlFormat;
+    }
+
+    protected function prepareXmlArray()
+    {
+        // Nothing to do here
     }
 }

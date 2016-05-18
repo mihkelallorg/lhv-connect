@@ -2,166 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/ForbiddenException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/RequestDataInvalidException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Exceptions/ServiceUnavailableException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LhvConnect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Requests/FullRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Requests/HeartbeatGetRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ResponseCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tags.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/UPGRADING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/ClientInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/CookieJarInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/FileCookieJar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SetCookie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/BadResponseException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ClientException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ConnectException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/GuzzleException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/SeekException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/ServerException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TooManyRedirectsException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Exception/TransferException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlFactoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/EasyHandle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/MockHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/StreamHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/HandlerStack.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/MessageFormatter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Middleware.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Pool.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RetryMiddleware.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/TransferStats.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/UriTemplate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/functions_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/AggregateException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/CancellationException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/EachPromise.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/FulfilledPromise.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/Promise.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromiseInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/PromisorInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectedPromise.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/RejectionException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/TaskQueue.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/src/functions_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/AggregateExceptionTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/EachPromiseTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/FulfilledPromiseTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/NotPromiseInstance.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/PromiseTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/RejectedPromiseTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/RejectionExceptionTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/TaskQueueTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/Thennable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/promises/tests/functionsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/phpunit.xml.dist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/AppendStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/BufferStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/CachingStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/DroppingStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/FnStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/InflateStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LazyOpenStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/LimitStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MultipartStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/NoSeekStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/PumpStream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Response.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/ServerRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Stream.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamDecoratorTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/StreamWrapper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/UploadedFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Uri.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/functions_include.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/AppendStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/BufferStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/CachingStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/DroppingStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/FnStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/FunctionsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/InflateStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/LazyOpenStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/LimitStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/MultipartStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/NoSeekStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/PumpStreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/RequestTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/ResponseTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/ServerRequestTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/StreamDecoratorTraitTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/StreamTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/StreamWrapperTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/UploadedFileTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/UriTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/guzzlehttp/psr7/tests/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/lhv-connect.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/BasicRequest.php" afterPath="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Requests/FullRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" afterPath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" />
     </list>
     <ignored path="lhv-connect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -188,9 +37,11 @@
           <file leaf-file-name="AccountStatementRequest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Requests/AccountStatementRequest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-                  <folding />
+                <state relative-caret-position="345">
+                  <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#38#55#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -199,13 +50,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="LhvConnect.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/LhvConnect.php">
+          <file leaf-file-name="MerchantPaymentReportRequest.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
                   <folding>
-                    <element signature="e#30#52#0#PHP" expanded="true" />
+                    <element signature="e#38#55#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -237,9 +88,10 @@
         <option value="$PROJECT_DIR$/src/LhvConnect.php" />
         <option value="$PROJECT_DIR$/src/Tags.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/ServiceUnavailableException.php" />
-        <option value="$PROJECT_DIR$/src/Requests/FullRequest.php" />
+        <option value="$PROJECT_DIR$/src/functions.php" />
         <option value="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
         <option value="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" />
+        <option value="$PROJECT_DIR$/src/Requests/FullRequest.php" />
         <option value="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" />
       </list>
     </option>
@@ -250,10 +102,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -303,10 +159,10 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,6 +194,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -351,6 +213,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="" />
@@ -358,12 +223,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463409877493</updated>
-      <workItem from="1463409879544" duration="21520000" />
+      <workItem from="1463409879544" duration="21960000" />
+      <workItem from="1463549904395" duration="7955000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21520000" />
+    <option name="totallyTimeSpent" value="29915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,27 +241,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21369047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19880952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -405,22 +279,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tags/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/XML.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tags/Tag.php" />
+    <entry file="file://$PROJECT_DIR$/src/XML.php" />
     <entry file="file://$PROJECT_DIR$/src/Exceptions/RequestDataInvalidException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -435,14 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="0:510" placeholder="{&quot;name&quot;: &quot;mihkullorg/lhv-connect&quot;...}" />
-            <marker date="1463493748000" expanded="true" signature="246:362" placeholder="[...]" />
-            <marker date="1463493748000" expanded="true" signature="252:358" placeholder="{&quot;name&quot;: &quot;Mihkel Allorg&quot;...}" />
-            <marker date="1463493748000" expanded="true" signature="377:399" placeholder="{&quot;php&quot;: &quot;&gt;=5.6.0&quot;...}" />
-            <marker date="1463493748000" expanded="true" signature="419:474" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="434:470" placeholder="{&quot;LhvConnect\&quot;: &quot;src/&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -450,7 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,14 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RequestType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestType.php" />
     <entry file="file://$PROJECT_DIR$/src/Requests/HeartbeatGetRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -846,65 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="39:83" placeholder=" Persists cookies in the client session ..." />
-            <marker date="1463493748000" expanded="true" signature="126:1940" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="308:635" placeholder=" Create a new SessionCookieJar object ..." />
-            <marker date="1463493748000" expanded="true" signature="712:847" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="856:913" placeholder=" Saves cookies to session when shutting down ..." />
-            <marker date="1463493748000" expanded="true" signature="948:983" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="992:1040" placeholder=" Save cookies to the client session ..." />
-            <marker date="1463493748000" expanded="true" signature="1069:1391" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1132:1324" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1255:1314" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1400:1473" placeholder=" Load the contents of the client session into the data array ..." />
-            <marker date="1463493748000" expanded="true" signature="1505:1938" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1710:1832" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1751:1822" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1858:1931" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/BasicRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="42:168" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="199:1647" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="315:360" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="395:528" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="596:950" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="662:768" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="773:944" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1003:1112" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1165:1584" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1194:1577" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1236:1307" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1359:1416" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1491:1568" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/FullRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="42:151" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="201:1556" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="430:510" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="546:801" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="836:1117" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="922:956" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="962:1111" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1190:1555" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="1241:1548" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1278:1417" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="1425:1538" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,30 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LhvConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#30#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="116:729" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="371:471" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="497:643" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="536:637" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="690:727" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ResponseCode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -953,11 +714,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LhvConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <marker date="1463493748000" expanded="true" signature="34:149" placeholder="..." />
+            <marker date="1463493748000" expanded="true" signature="169:775" placeholder="..." />
+            <marker date="1463493748000" expanded="true" signature="226:323" placeholder="{...}" />
+            <marker date="1463493748000" expanded="true" signature="269:314" placeholder="..." />
+            <marker date="1463493748000" expanded="true" signature="370:490" placeholder="{...}" />
+            <marker date="1463493748000" expanded="true" signature="538:565" placeholder="{...}" />
+            <marker date="1463493748000" expanded="true" signature="636:772" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Requests/BasicRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <marker date="1463555026000" expanded="true" signature="42:223" placeholder="..." />
+            <marker date="1463555026000" expanded="true" signature="254:1702" placeholder="..." />
+            <marker date="1463555026000" expanded="true" signature="370:415" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="450:583" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="651:1005" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="717:823" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="828:999" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="1058:1167" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="1220:1639" placeholder="{...}" />
+            <marker date="1463555026000" expanded="true" signature="1249:1632" placeholder="..." />
+            <marker date="1463555026000" expanded="true" signature="1291:1362" placeholder="..." />
+            <marker date="1463555026000" expanded="true" signature="1414:1471" placeholder="..." />
+            <marker date="1463555026000" expanded="true" signature="1546:1623" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1463552548000" expanded="true" signature="33:136" placeholder=" Taken from http://stackoverflow.com/a/4356295/5122070 ..." />
+            <marker date="1463552548000" expanded="true" signature="191:489" placeholder="{...}" />
+            <marker date="1463552548000" expanded="true" signature="385:460" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="e#38#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="20" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1463562242000" expanded="true" signature="42:151" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="202:3419" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="457:605" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="640:785" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="821:1062" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="1071:1248" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1463562242000" expanded="true" signature="1284:2580" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="1342:2573" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="1394:2507" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="1455:2493" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="1510:1751" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="1569:1720" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="1784:2042" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="1879:2042" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="2073:2475" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="2213:2475" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="2653:3205" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="2704:3198" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="2741:2880" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="2888:3188" placeholder="..." />
+            <marker date="1463562242000" expanded="true" signature="2921:3061" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="3065:3175" placeholder="{...}" />
+            <marker date="1463562242000" expanded="true" signature="3214:3310" placeholder=" Set the (default) values for fields ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Requests/AccountStatementRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
