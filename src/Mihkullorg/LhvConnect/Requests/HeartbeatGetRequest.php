@@ -1,6 +1,6 @@
 <?php
 
-namespace LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Request;
 
 class HeartbeatGetRequest extends BasicRequest {
 

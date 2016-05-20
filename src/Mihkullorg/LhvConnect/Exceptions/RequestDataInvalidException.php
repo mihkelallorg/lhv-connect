@@ -1,6 +1,6 @@
 <?php
 
-namespace LhvConnect\Exceptions;
+namespace Mihkullorg\LhvConnect\Exceptions;
 
 use Exception;
 

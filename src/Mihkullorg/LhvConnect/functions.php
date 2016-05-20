@@ -1,6 +1,6 @@
 <?php
 
-namespace LhvConnect;
+namespace Mihkullorg\LhvConnect;
 
 /**
  * Taken from http://stackoverflow.com/a/4356295/5122070

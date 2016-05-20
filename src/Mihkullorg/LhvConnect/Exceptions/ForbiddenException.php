@@ -1,6 +1,6 @@
 <?php
 
-use LhvConnect\ResponseCode;
+use Mihkullorg\LhvConnect\ResponseCode;
 
 class ForbiddenException extends Exception{
 

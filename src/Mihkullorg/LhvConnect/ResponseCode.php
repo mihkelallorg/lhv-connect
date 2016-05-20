@@ -1,6 +1,6 @@
 <?php
 
-namespace LhvConnect;
+namespace Mihkullorg\LhvConnect;
 
 class ResponseCode{
     const

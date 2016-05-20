@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/lhv-connect.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/config.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Exceptions/ForbiddenException.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Exceptions/RequestDataInvalidException.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Exceptions/ServiceUnavailableException.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ServiceUnavailableException.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/LhvConnect.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Requests/BasicRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Requests/HeartbeatGetRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ResponseCode.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Tags.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/functions.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/BasicRequest.php" afterPath="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Requests/FullRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" afterPath="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
     </list>
     <ignored path="lhv-connect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,17 +41,15 @@
     <favorites_list name="lhv-connect" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.39823568">
       <split-first>
         <leaf>
-          <file leaf-file-name="AccountStatementRequest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Requests/AccountStatementRequest.php">
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#38#55#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="165">
+                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -50,14 +58,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="MerchantPaymentReportRequest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php">
+          <file leaf-file-name="LaravelLhvConnectServiceProvier.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-                  <folding>
-                    <element signature="e#38#55#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="75">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -78,21 +84,36 @@
         <option value="$PROJECT_DIR$/src/Exceptions/RequestDataInvalidException.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/Tags.php" />
         <option value="$PROJECT_DIR$/src/XML.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/config.php" />
         <option value="$PROJECT_DIR$/src/ResponseCode.php" />
         <option value="$PROJECT_DIR$/src/Requests/Request.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/ForbiddenException.php" />
         <option value="$PROJECT_DIR$/src/RequestType.php" />
         <option value="$PROJECT_DIR$/src/Requests/HeartbeatGetRequest.php" />
-        <option value="$PROJECT_DIR$/src/LhvConnect.php" />
-        <option value="$PROJECT_DIR$/src/Tags.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/ServiceUnavailableException.php" />
         <option value="$PROJECT_DIR$/src/functions.php" />
-        <option value="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
         <option value="$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php" />
         <option value="$PROJECT_DIR$/src/Requests/FullRequest.php" />
         <option value="$PROJECT_DIR$/src/Requests/AccountStatementRequest.php" />
+        <option value="$PROJECT_DIR$/src/Tags.php" />
+        <option value="$PROJECT_DIR$/src/config.php" />
+        <option value="$PROJECT_DIR$/src/LhvConnect.php" />
+        <option value="$PROJECT_DIR$/src/Requests/BasicRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ServiceUnavailableException.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/config/config.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" />
       </list>
     </option>
   </component>
@@ -107,9 +128,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -158,11 +178,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,6 +225,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Mihkullorg" />
+      <recent name="$PROJECT_DIR$/src/LhvConnect" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Requests" />
     </key>
@@ -224,12 +277,16 @@
       <option name="presentableId" value="Default" />
       <updated>1463409877493</updated>
       <workItem from="1463409879544" duration="21960000" />
-      <workItem from="1463549904395" duration="7955000" />
+      <workItem from="1463549904395" duration="9916000" />
+      <workItem from="1463570345164" duration="1624000" />
+      <workItem from="1463583798389" duration="415000" />
+      <workItem from="1463639648563" duration="8504000" />
+      <workItem from="1463724073780" duration="445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29915000" />
+    <option name="totallyTimeSpent" value="42864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -241,14 +298,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19880952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19821429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -259,6 +315,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -279,413 +336,47 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tags/Tag.php" />
-    <entry file="file://$PROJECT_DIR$/src/XML.php" />
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/RequestDataInvalidException.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="110:205" placeholder="..." />
-          </folding>
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tags/Tag.php" />
+    <entry file="file://$PROJECT_DIR$/src/XML.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/http.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-405">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <marker date="1462279504000" expanded="true" signature="73:99" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="835:899" placeholder=" @link http://php.net/manual/en/class.httpdeflatestream.php ..." />
-            <marker date="1462279504000" expanded="true" signature="928:2976" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="1287:1534" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="1590:1853" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="1896:2188" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="2237:2500" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="2550:2901" placeholder=" (PECL pecl_http &amp;gt;= 1.4.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="2982:3046" placeholder=" @link http://php.net/manual/en/class.httpinflatestream.php ..." />
-            <marker date="1462279504000" expanded="true" signature="3075:4851" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="3163:3409" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="3465:3728" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="3771:4063" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="4112:4375" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="4425:4776" placeholder=" (PECL pecl_http &amp;gt;= 1.4.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="4857:4915" placeholder=" @link http://php.net/manual/en/class.httpmessage.php ..." />
-            <marker date="1462279504000" expanded="true" signature="4995:15968" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="5290:5549" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="5607:5785" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="5824:6042" placeholder=" (PECL pecl_http &amp;gt;= 0.14.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="6086:6352" placeholder=" (PECL pecl_http &amp;gt;= 1.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="6400:6614" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="6656:6957" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="7013:7610" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="7682:7852" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="7891:8100" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="8176:8201" placeholder=" @param $http_info ..." />
-            <marker date="1462279504000" expanded="true" signature="8250:8495" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="8542:8891" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="8943:9209" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="9258:9574" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="9630:9897" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="9945:10300" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="10355:10618" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="10663:10985" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="11034:11228" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="11274:11572" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="11626:11995" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="12074:12271" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="12319:12497" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="12533:12854" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="12916:13198" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="13313:13339" placeholder=" @param $serialized ..." />
-            <marker date="1462279504000" expanded="true" signature="13543:13565" placeholder=" @return string ..." />
-            <marker date="1462279504000" expanded="true" signature="13607:14021" placeholder=" (PECL pecl_http &amp;gt;= 1.4.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="14106:14524" placeholder=" (PECL pecl_http 0.10.0-1.3.3)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="14612:15022" placeholder=" (PECL pecl_http &amp;gt;= 1.5.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="15101:15291" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="15329:15665" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="15737:15933" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="15974:16036" placeholder=" @link http://php.net/manual/en/class.httpquerystring.php ..." />
-            <marker date="1462279504000" expanded="true" signature="16099:22132" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="16316:16670" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="16746:16954" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="16993:17195" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="17235:17257" placeholder=" @return string ..." />
-            <marker date="1462279504000" expanded="true" signature="17299:17963" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="18055:18307" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="18349:18614" placeholder=" (PECL pecl_http &amp;gt;= 1.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="18656:18736" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="18798:18878" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="18939:19019" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="19082:19162" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="19226:19306" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="19369:19449" placeholder=" @param $name ..." />
-            <marker date="1462279504000" expanded="true" signature="19513:19610" placeholder=" @param $global [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="19685:20043" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="20105:20413" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="20458:20643" placeholder=" String representation of object ..." />
-            <marker date="1462279504000" expanded="true" signature="20674:20678" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="20684:20900" placeholder=" Offset to retrieve ..." />
-            <marker date="1462279504000" expanded="true" signature="20938:20942" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="20948:21163" placeholder=" Constructs the object ..." />
-            <marker date="1462279504000" expanded="true" signature="21207:21211" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="21217:21545" placeholder=" Whether a offset exists ..." />
-            <marker date="1462279504000" expanded="true" signature="21586:21590" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="21596:21848" placeholder=" Offset to set ..." />
-            <marker date="1462279504000" expanded="true" signature="21894:21898" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="21904:22087" placeholder=" Offset to unset ..." />
-            <marker date="1462279504000" expanded="true" signature="22127:22131" placeholder="{...}" />
-            <marker date="1462279504000" expanded="true" signature="22138:22196" placeholder=" @link http://php.net/manual/en/class.httprequest.php ..." />
-            <marker date="1462279504000" expanded="true" signature="22219:42603" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="23735:24148" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="24250:24654" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="24718:24920" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="24962:25319" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="25386:25604" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="25649:25959" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="26018:26324" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="26380:26586" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="26628:27001" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="27066:27359" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="27415:27622" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="27664:28037" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="28102:28290" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="28335:28676" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="28777:29032" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="29088:29265" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="29306:29537" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="29579:29760" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="29798:30161" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="30220:30420" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="30466:30859" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="30914:31109" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="31153:31458" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="31521:31847" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="31908:32114" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="32159:32455" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="32516:32560" placeholder=" @param $request_body_data [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="32649:32682" placeholder=" @param $request_body_data ..." />
-            <marker date="1462279504000" expanded="true" signature="32739:33007" placeholder=" (PECL pecl_http 0.14.0-1.4.1)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="33074:33285" placeholder=" (PECL pecl_http 0.14.0-1.4.1)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="33331:33607" placeholder=" (PECL pecl_http 0.14.0-1.4.1)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="33667:33983" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="34044:34524" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="34601:34799" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="34843:35160" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="35214:35423" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="35465:35724" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="35782:35979" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="36021:36274" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="36325:36518" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="36554:36896" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="36943:37377" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="37438:37876" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="37971:38166" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="38213:38422" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="38471:38669" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="38716:39195" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="39254:39463" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="39513:39764" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="39817:40038" placeholder=" (PECL pecl_http &amp;gt;= 0.11.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="40087:40295" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="40347:40574" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="40616:40767" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="40811:40936" placeholder=" @param $url [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="41018:41096" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41160:41238" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41303:41398" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41474:41569" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41647:41742" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41817:41912" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="41987:42084" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="42163:42190" placeholder=" @param $method_name ..." />
-            <marker date="1462279504000" expanded="true" signature="42255:42277" placeholder=" @param $method ..." />
-            <marker date="1462279504000" expanded="true" signature="42339:42364" placeholder=" @param $method_id ..." />
-            <marker date="1462279504000" expanded="true" signature="42423:42445" placeholder=" @param $method ..." />
-            <marker date="1462279504000" expanded="true" signature="42503:42543" placeholder=" @param $fields ..." />
-            <marker date="1462279504000" expanded="true" signature="42655:43250" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="42817:42852" placeholder=" @param HttpRequest $request ..." />
-            <marker date="1462279504000" expanded="true" signature="42910:42945" placeholder=" @param HttpRequest $request ..." />
-            <marker date="1462279504000" expanded="true" signature="43033:43100" placeholder=" @param $global [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="43166:43199" placeholder=" @param $global [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="43256:43318" placeholder=" @link http://php.net/manual/en/class.httprequestpool.php ..." />
-            <marker date="1462279504000" expanded="true" signature="43388:46511" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="43394:43631" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="43702:43866" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="43908:44220" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="44279:44580" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="44640:44827" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="44863:45016" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="45053:45271" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="45319:45518" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="45745:45979" placeholder=" (PECL pecl_http &amp;gt;= 0.16.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="46030:46292" placeholder=" (PECL pecl_http &amp;gt;= 0.16.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="46343:46376" placeholder=" @param $enable [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="46431:46464" placeholder=" @param $enable [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="46517:46576" placeholder=" @link http://php.net/manual/en/class.httpresponse.php ..." />
-            <marker date="1462279504000" expanded="true" signature="46600:58284" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="47190:47666" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="47751:48201" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="48261:48529" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="48580:48781" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="48827:49139" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="49203:49409" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="49463:49962" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="50047:50284" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="50344:50723" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="50789:50989" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="51042:51423" placeholder=" (PECL pecl_http &amp;gt;= 0.13.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="51509:51765" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="51818:52010" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="52057:52662" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="52766:52995" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="53049:53309" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="53360:53550" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="53596:53875" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="53938:54153" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="54208:54462" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="54520:54727" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="54779:55010" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="55061:55257" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="55303:55551" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="55602:55800" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="55846:56136" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="56191:56369" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="56417:56727" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="56786:56941" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="56987:57274" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="57389:57571" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="57623:57787" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="57843:58002" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="58055:58229" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="58304:60469" placeholder="..." />
-            <marker date="1462279504000" expanded="true" signature="58310:58346" placeholder=" @param $timestamp [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="58399:58508" placeholder=" @param $url ..." />
-            <marker date="1462279504000" expanded="true" signature="58587:58669" placeholder=" @param $query ..." />
-            <marker date="1462279504000" expanded="true" signature="58741:58796" placeholder=" @param $supported ..." />
-            <marker date="1462279504000" expanded="true" signature="58872:58927" placeholder=" @param $supported ..." />
-            <marker date="1462279504000" expanded="true" signature="59002:59057" placeholder=" @param $supported ..." />
-            <marker date="1462279504000" expanded="true" signature="59136:59198" placeholder=" @param $last_modified ..." />
-            <marker date="1462279504000" expanded="true" signature="59276:59335" placeholder=" @param $plain_etag ..." />
-            <marker date="1462279504000" expanded="true" signature="59406:59496" placeholder=" @param $header_name ..." />
-            <marker date="1462279504000" expanded="true" signature="59597:59627" placeholder=" @param $message_string ..." />
-            <marker date="1462279504000" expanded="true" signature="59693:59723" placeholder=" @param $headers_string ..." />
-            <marker date="1462279504000" expanded="true" signature="59789:59818" placeholder=" @param $cookie_string ..." />
-            <marker date="1462279504000" expanded="true" signature="59882:59910" placeholder=" @param $cookie_array ..." />
-            <marker date="1462279504000" expanded="true" signature="59973:60030" placeholder=" @param $param_string ..." />
-            <marker date="1462279504000" expanded="true" signature="60101:60131" placeholder=" @param $encoded_string ..." />
-            <marker date="1462279504000" expanded="true" signature="60198:60248" placeholder=" @param $plain ..." />
-            <marker date="1462279504000" expanded="true" signature="60308:60331" placeholder=" @param $encoded ..." />
-            <marker date="1462279504000" expanded="true" signature="60385:60419" placeholder=" @param $feature [optional] ..." />
-            <marker date="1462279504000" expanded="true" signature="60475:60740" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="60789:61454" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="61558:62095" placeholder=" (PECL pecl_http &amp;gt;= 0.23.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="62183:62646" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="62733:63197" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="63283:63767" placeholder=" (PECL pecl_http &amp;gt;= 0.19.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="63858:64432" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="64536:64830" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="64892:65141" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="65187:65518" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="65581:65867" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="65932:66415" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="66492:66939" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="67017:67424" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="67486:67837" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="67912:68225" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="68275:68503" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="68545:68767" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="68809:69061" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="69107:69377" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="69427:69748" placeholder=" (PECL pecl_http &amp;gt;= 0.12.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="69797:70054" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="70102:70649" placeholder=" (PECL pecl_http &amp;gt;= 0.20.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="70743:71003" placeholder=" (PECL pecl_http &amp;gt;= 1.2.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="71056:71355" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="71416:71627" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="71674:71893" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="71937:72165" placeholder=" (PECL pecl_http &amp;gt;= 0.22.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="72216:72669" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="72752:73003" placeholder=" (PECL pecl_http &amp;gt;= 1.5.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="73055:73257" placeholder=" (PECL pecl_http &amp;gt;= 1.5.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="73322:73618" placeholder=" (PECL pecl_http &amp;gt;= 1.5.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="73676:74053" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="74135:74501" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="74591:75066" placeholder=" (PECL pecl_http &amp;gt;= 0.1.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="75168:75708" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="75843:76278" placeholder=" (PECL pecl_http &amp;gt;= 0.25.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="76379:76813" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="76914:77385" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="77490:77975" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="78091:78390" placeholder=" (PECL pecl_http &amp;gt;= 1.0.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="78464:78759" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="78817:79086" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="79146:79428" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="79484:79762" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="79816:80005" placeholder=" (PECL pecl_http &amp;gt;= 0.10.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="80054:80390" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="80445:80706" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="80746:80941" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="80993:81188" placeholder=" (PECL pecl_http &amp;gt;= 0.21.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="81240:81573" placeholder=" (PECL pecl_http &amp;gt;= 0.15.0)&lt;br/&gt; ..." />
-            <marker date="1462279504000" expanded="true" signature="81624:81705" placeholder=" don't urldecode values ..." />
-            <marker date="1462279504000" expanded="true" signature="81749:81876" placeholder=" whether &amp;quot;secure&amp;quot; was found in the cookie's parameters list ..." />
-            <marker date="1462279504000" expanded="true" signature="81918:82046" placeholder=" whether &amp;quot;httpOnly&amp;quot; was found in the cookie's parameter list ..." />
-            <marker date="1462279504000" expanded="true" signature="82537:82607" placeholder=" don't flush ..." />
-            <marker date="1462279504000" expanded="true" signature="82661:82743" placeholder=" synchronized flush only ..." />
-            <marker date="1462279504000" expanded="true" signature="82803:82877" placeholder=" full data flush ..." />
-            <marker date="1462279504000" expanded="true" signature="82937:83032" placeholder=" use &amp;quot;basic&amp;quot; authentication ..." />
-            <marker date="1462279504000" expanded="true" signature="83070:83166" placeholder=" use &amp;quot;digest&amp;quot; authentication ..." />
-            <marker date="1462279504000" expanded="true" signature="83205:83299" placeholder=" use &amp;quot;NTLM&amp;quot; authentication ..." />
-            <marker date="1462279504000" expanded="true" signature="83336:83439" placeholder=" use &amp;quot;GSS-NEGOTIATE&amp;quot; authentication ..." />
-            <marker date="1462279504000" expanded="true" signature="83478:83566" placeholder=" try any authentication scheme ..." />
-            <marker date="1462279504000" expanded="true" signature="83636:83711" placeholder=" HTTP version 1.0 ..." />
-            <marker date="1462279504000" expanded="true" signature="83750:83825" placeholder=" HTTP version 1.1 ..." />
-            <marker date="1462279504000" expanded="true" signature="83864:83956" placeholder=" no specific HTTP protocol version ..." />
-            <marker date="1462279504000" expanded="true" signature="83995:84068" placeholder=" use TLSv1 only ..." />
-            <marker date="1462279504000" expanded="true" signature="84113:84186" placeholder=" use SSLv2 only ..." />
-            <marker date="1462279504000" expanded="true" signature="84231:84304" placeholder=" use SSLv3 only ..." />
-            <marker date="1462279504000" expanded="true" signature="84349:84440" placeholder=" no specific SSL protocol version ..." />
-            <marker date="1462279504000" expanded="true" signature="84483:84572" placeholder=" use IPv4 only for name lookups ..." />
-            <marker date="1462279504000" expanded="true" signature="84612:84701" placeholder=" use IPv6 only for name lookups ..." />
-            <marker date="1462279504000" expanded="true" signature="84741:84842" placeholder=" use any IP mechanism only for name lookups ..." />
-            <marker date="1462279504000" expanded="true" signature="84883:84974" placeholder=" the proxy is a SOCKS4 type proxy ..." />
-            <marker date="1462279504000" expanded="true" signature="85014:85105" placeholder=" the proxy is a SOCKS5 type proxy ..." />
-            <marker date="1462279504000" expanded="true" signature="85145:85223" placeholder=" standard HTTP proxy ..." />
-            <marker date="1462279504000" expanded="true" signature="86162:86253" placeholder=" guess applicable redirect method ..." />
-            <marker date="1462279504000" expanded="true" signature="86289:86390" placeholder=" permanent redirect (301 Moved permanently) ..." />
-            <marker date="1462279504000" expanded="true" signature="86433:86974" placeholder=" standard redirect (302 Found) ..." />
-            <marker date="1462279504000" expanded="true" signature="87018:87129" placeholder=" redirect applicable to POST requests (303 See other) ..." />
-            <marker date="1462279504000" expanded="true" signature="87172:87261" placeholder=" proxy redirect (305 Use proxy) ..." />
-            <marker date="1462279504000" expanded="true" signature="87305:87407" placeholder=" temporary redirect (307 Temporary Redirect) ..." />
-            <marker date="1462279504000" expanded="true" signature="87450:87559" placeholder=" querying for this constant will always return true ..." />
-            <marker date="1462279504000" expanded="true" signature="87594:87737" placeholder=" whether support to issue HTTP requests is given, ie. libcurl support was compiled in ..." />
-            <marker date="1462279504000" expanded="true" signature="87781:87945" placeholder=" whether support to guess the Content-Type of HTTP messages is given, ie. libmagic support was compiled in ..." />
-            <marker date="1462279504000" expanded="true" signature="87990:88126" placeholder=" whether support for zlib encodings is given, ie. libz support was compiled in ..." />
-            <marker date="1462279504000" expanded="true" signature="88171:88333" placeholder=" whether support to issue HTTP requests over SSL is given, ie. linked libcurl was built with SSL support ..." />
-            <marker date="1462279504000" expanded="true" signature="88418:88531" placeholder=" allow commands additionally to semicolons as separator ..." />
-            <marker date="1462279504000" expanded="true" signature="88577:88676" placeholder=" continue parsing after an error occurred ..." />
-            <marker date="1462279504000" expanded="true" signature="88724:88817" placeholder=" raise PHP warnings on parse errors ..." />
-            <marker date="1462279504000" expanded="true" signature="88863:88959" placeholder=" all three values above, bitwise or'ed ..." />
-            <marker date="1462279504000" expanded="true" signature="89001:89130" placeholder=" replace every part of the first URL when there's one of the second URL ..." />
-            <marker date="1462279504000" expanded="true" signature="89169:89247" placeholder=" join relative paths ..." />
-            <marker date="1462279504000" expanded="true" signature="89288:89365" placeholder=" join query strings ..." />
-            <marker date="1462279504000" expanded="true" signature="89407:89507" placeholder=" strip any user authentication information ..." />
-            <marker date="1462279504000" expanded="true" signature="89549:89653" placeholder=" strip any password authentication information ..." />
-            <marker date="1462279504000" expanded="true" signature="89695:89790" placeholder=" strip any authentication information ..." />
-            <marker date="1462279504000" expanded="true" signature="89833:89919" placeholder=" strip explicit port numbers ..." />
-            <marker date="1462279504000" expanded="true" signature="89962:90040" placeholder=" strip complete path ..." />
-            <marker date="1462279504000" expanded="true" signature="90083:90160" placeholder=" strip query string ..." />
-            <marker date="1462279504000" expanded="true" signature="90205:90297" placeholder=" strip any fragments (#identifier) ..." />
-            <marker date="1462279504000" expanded="true" signature="90345:90438" placeholder=" strip anything but scheme and host ..." />
-            <marker date="1462279504000" expanded="true" signature="90517:90589" placeholder=" runtime error ..." />
-            <marker date="1462279504000" expanded="true" signature="90626:90716" placeholder=" an invalid parameter was passed ..." />
-            <marker date="1462279504000" expanded="true" signature="90759:90854" placeholder=" header() or similar operation failed ..." />
-            <marker date="1462279504000" expanded="true" signature="90890:90972" placeholder=" HTTP header parse error ..." />
-            <marker date="1462279504000" expanded="true" signature="91019:91108" placeholder=" unknown/invalid request method ..." />
-            <marker date="1462279504000" expanded="true" signature="91152:91251" placeholder=" with operation incompatible message type ..." />
-            <marker date="1462279504000" expanded="true" signature="91293:91375" placeholder=" encoding/decoding error ..." />
-            <marker date="1462279504000" expanded="true" signature="91413:91487" placeholder=" request failure ..." />
-            <marker date="1462279504000" expanded="true" signature="91524:91603" placeholder=" request pool failure ..." />
-            <marker date="1462279504000" expanded="true" signature="91645:91720" placeholder=" socket exception ..." />
-            <marker date="1462279504000" expanded="true" signature="91757:91832" placeholder=" response failure ..." />
-            <marker date="1462279504000" expanded="true" signature="91871:91941" placeholder=" invalid URL ..." />
-            <marker date="1462279504000" expanded="true" signature="91975:92063" placeholder=" querystring operation failure ..." />
-            <marker date="1462279504000" expanded="true" signature="92105:92198" placeholder=" the message is of no specific type ..." />
-            <marker date="1462279504000" expanded="true" signature="92234:92314" placeholder=" request style message ..." />
-            <marker date="1462279504000" expanded="true" signature="92353:92434" placeholder=" response style message ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RequestType.php" />
-    <entry file="file://$PROJECT_DIR$/src/Requests/HeartbeatGetRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="86:304" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="232:303" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/ForbiddenException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="80:365" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/ServiceUnavailableException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="45:84" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="139:274" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -693,126 +384,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tags.php">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="33" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="42:905" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="737:776" placeholder=" Request name tags ..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResponseCode.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="49:204" placeholder="..." />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LhvConnect.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <marker date="1463493748000" expanded="true" signature="34:149" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="169:775" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="226:323" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="269:314" placeholder="..." />
-            <marker date="1463493748000" expanded="true" signature="370:490" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="538:565" placeholder="{...}" />
-            <marker date="1463493748000" expanded="true" signature="636:772" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/BasicRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <marker date="1463555026000" expanded="true" signature="42:223" placeholder="..." />
-            <marker date="1463555026000" expanded="true" signature="254:1702" placeholder="..." />
-            <marker date="1463555026000" expanded="true" signature="370:415" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="450:583" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="651:1005" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="717:823" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="828:999" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="1058:1167" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="1220:1639" placeholder="{...}" />
-            <marker date="1463555026000" expanded="true" signature="1249:1632" placeholder="..." />
-            <marker date="1463555026000" expanded="true" signature="1291:1362" placeholder="..." />
-            <marker date="1463555026000" expanded="true" signature="1414:1471" placeholder="..." />
-            <marker date="1463555026000" expanded="true" signature="1546:1623" placeholder="..." />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1463552548000" expanded="true" signature="33:136" placeholder=" Taken from http://stackoverflow.com/a/4356295/5122070 ..." />
-            <marker date="1463552548000" expanded="true" signature="191:489" placeholder="{...}" />
-            <marker date="1463552548000" expanded="true" signature="385:460" placeholder="..." />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/MerchantPaymentReportRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ServiceUnavailableException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#38#55#0#PHP" expanded="true" />
-          </folding>
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/FullRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="20" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1463562242000" expanded="true" signature="42:151" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="202:3419" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="457:605" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="640:785" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="821:1062" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="1071:1248" placeholder=" Checks if the data the user entered, matches the rules ..." />
-            <marker date="1463562242000" expanded="true" signature="1284:2580" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="1342:2573" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="1394:2507" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="1455:2493" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="1510:1751" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="1569:1720" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="1784:2042" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="1879:2042" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="2073:2475" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="2213:2475" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="2653:3205" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="2704:3198" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="2741:2880" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="2888:3188" placeholder="..." />
-            <marker date="1463562242000" expanded="true" signature="2921:3061" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="3065:3175" placeholder="{...}" />
-            <marker date="1463562242000" expanded="true" signature="3214:3310" placeholder=" Set the (default) values for fields ..." />
-          </folding>
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Requests/AccountStatementRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#38#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

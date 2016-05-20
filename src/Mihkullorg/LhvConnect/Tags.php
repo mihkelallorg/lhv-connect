@@ -1,6 +1,6 @@
 <?php
 
-namespace LhvConnect;
+namespace Mihkullorg\LhvConnect;
 
 class Tags {
 
@@ -30,9 +30,8 @@ class Tags {
          * Request name tags
          */
 
-        MERCHANT_REPORT_REQUEST = "MerchantReportRequest",
-        ACCOUNT_STATEMENT_REQUEST = "AcctRptgReq"
-        
+        ACCOUNT_STATEMENT_REQUEST = "AcctRptgReq",
+        MERCHANT_REPORT_REQUEST = "MerchantReportRequest"
     ;
 
 }

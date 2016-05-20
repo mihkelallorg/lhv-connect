@@ -1,10 +1,10 @@
 <?php
 
-namespace LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Request;
 
 use DateInterval;
 use DateTime;
-use LhvConnect\Tags;
+use Mihkullorg\LhvConnect\Tags;
 
 class MerchantPaymentReportRequest extends FullRequest {
 

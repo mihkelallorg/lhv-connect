@@ -1,9 +1,9 @@
 <?php
 
-namespace LhvConnect\Exceptions;
+namespace Mihkullorg\LhvConnect\Exceptions;
 
 use Exception;
-use LhvConnect\ResponseCode;
+use Mihkullorg\LhvConnect\ResponseCode;
 
 class ServiceUnavailableException extends Exception {
     

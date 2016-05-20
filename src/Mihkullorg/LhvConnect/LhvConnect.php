@@ -1,15 +1,15 @@
 <?php
 
-namespace LhvConnect;
+namespace Mihkullorg\LhvConnect;
 
 use GuzzleHttp\Client;
-use LhvConnect\Request\HeartbeatGetRequest;
-use LhvConnect\Request\MerchantPaymentReportRequest;
+use Mihkullorg\LhvConnect\Request\HeartbeatGetRequest;
+use Mihkullorg\LhvConnect\Request\MerchantPaymentReportRequest;
 
 class LhvConnect {
 
     private $client;
-
+    
     public function __construct()
     {
         $this->client = new Client([

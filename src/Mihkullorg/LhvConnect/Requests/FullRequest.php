@@ -1,10 +1,10 @@
 <?php
 
-namespace LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Request;
 
 use DateTime;
 use GuzzleHttp\Client;
-use LhvConnect\Exceptions\RequestDataInvalidException;
+use Mihkullorg\LhvConnect\Exceptions\RequestDataInvalidException;
 use SimpleXMLElement;
 
 abstract class FullRequest extends BasicRequest {

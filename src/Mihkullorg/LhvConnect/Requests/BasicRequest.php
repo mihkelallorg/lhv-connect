@@ -1,12 +1,12 @@
 <?php
 
-namespace LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Request;
 
 use Exception;
 use ForbiddenException;
 use GuzzleHttp\Client;
-use LhvConnect\Exceptions\ServiceUnavailableException;
-use LhvConnect\ResponseCode;
+use Mihkullorg\LhvConnect\Exceptions\ServiceUnavailableException;
+use Mihkullorg\LhvConnect\ResponseCode;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class BasicRequest {
@@ -15,14 +15,15 @@ abstract class BasicRequest {
     protected $method;
     protected $client;
 
-    public function __construct(Client $client)
+    public function __construct(Client $client, $cert)
     {
+        $this->cert = $cert;
         $this->client = $client;
     }
 
     public function sendRequest()
     {
-        $response = $this->client->request($this->method, $this->url);
+        $response = $this->client->request($this->method, $this->url, $this->params);
 
         return $this->handleResponse($response);
     }
