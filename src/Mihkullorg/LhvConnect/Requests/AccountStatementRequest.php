@@ -19,7 +19,6 @@ class AccountStatementRequest extends FullRequest {
     protected $xmlFormat = "camt.060.001.03";
 
     protected $rules = [
-        'IBAN' => 'required',
         'FROM_DATE' => 'date',
         'TO_DATE' => 'date'
     ];
@@ -69,7 +68,7 @@ class AccountStatementRequest extends FullRequest {
     protected function prepareFields()
     {
         $this->fields['MESSAGE_IDENTIFICATION'] = $this->msgId;
-        
+        $this->fields['IBAN'] = $this->configuration['IBAN'];
         $dateTime = new DateTime(); // It's now
         $this->fields['CREATION_DATETIME'] = $dateTime::ISO8601;
         $this->fields['FROM_DATE'] = $dateTime->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month

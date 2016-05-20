@@ -3,15 +3,18 @@
 namespace Mihkullorg\LhvConnect;
 
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Config;
 use Mihkullorg\LhvConnect\Request\HeartbeatGetRequest;
 use Mihkullorg\LhvConnect\Request\MerchantPaymentReportRequest;
 
 class LhvConnect {
 
     private $client;
+    private $configuration;
     
-    public function __construct()
+    public function __construct($name)
     {
+        $this->configuration = Config::get('lhv-connect.' . $name);
         $this->client = new Client([
             'base_uri' => BANK_URI,
         ]);
@@ -19,7 +22,7 @@ class LhvConnect {
 
     public function makeHeartbeatGetRequest()
     {
-        $request = new HeartbeatGetRequest($this->client);
+        $request = new HeartbeatGetRequest($this->client, $this->configuration);
         
         return $request->sendRequest();
     }
@@ -31,7 +34,7 @@ class LhvConnect {
     
     public function makeMerchantPaymentReportRequest(array $data)
     {
-        $request = new MerchantPaymentReportRequest($this->client, $data);
+        $request = new MerchantPaymentReportRequest($this->client, $this->configuration, $data);
         
         return $request->sendRequest();
     }

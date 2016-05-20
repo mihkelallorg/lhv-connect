@@ -22,12 +22,12 @@ abstract class FullRequest extends BasicRequest {
     protected $xml;
 
 
-    public function __construct(Client $client, array $data)
+    public function __construct(Client $client, $configuration, array $data)
     {
         $this->data = $data;
-        $this->msgId = \LhvConnect\generateMessageIdentification();
+        $this->msgId = \Mihkullorg\LhvConnect\generateMessageIdentification();
 
-        parent::__construct($client);
+        parent::__construct($client, $configuration);
     }
 
     public function sendRequest()
@@ -43,7 +43,6 @@ abstract class FullRequest extends BasicRequest {
     {
         $xml = new SimpleXMLElement($this->xmlTag);
         $this->array_to_xml($this->xml, $xml);
-        $this->XMLfile = XML_ROOT . (new DateTime)->getTimestamp() . rand(10000, 100000) . '.xml';
 
         return $xml->asXML();
     }

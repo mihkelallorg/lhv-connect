@@ -14,16 +14,21 @@ abstract class BasicRequest {
     protected $url;
     protected $method;
     protected $client;
+    protected $params;
+    protected $configuration;
 
-    public function __construct(Client $client, $cert)
+    public function __construct(Client $client, $configuration)
     {
-        $this->cert = $cert;
         $this->client = $client;
+        $this->configuration = $configuration;
+        $this->params = [];
     }
 
     public function sendRequest()
     {
-        $response = $this->client->request($this->method, $this->url, $this->params);
+        $this->makeParams();
+
+        $response = $this->client->request($this->method, $this->url);
 
         return $this->handleResponse($response);
     }
@@ -64,4 +69,9 @@ abstract class BasicRequest {
     }
     
     protected abstract function handleMessage($message);
+
+    protected function makeParams()
+    {
+        $params['cert'] = $this->configuration['cert'];
+    }
 }

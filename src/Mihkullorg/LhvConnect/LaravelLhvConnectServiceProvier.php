@@ -1,5 +1,7 @@
 <?php
 
+namespace Mihkullorg\LhvConnect;
+
 use Illuminate\Support\ServiceProvider;
 
 class LaravelLhvConnectServiceProvider extends ServiceProvider {
@@ -46,7 +48,7 @@ class LaravelLhvConnectServiceProvider extends ServiceProvider {
         $configPath = __DIR__ . '/../../config/config.php';
 
         $this->publishes([
-            $configPath => config_path('laravel-banklinks.php')
+            $configPath => config_path('lhv-connect.php')
         ]);
     }
 }
