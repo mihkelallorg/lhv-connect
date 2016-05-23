@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihkullorg\LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Requests;
 
 use DateTime;
 use GuzzleHttp\Client;
@@ -25,7 +25,7 @@ abstract class FullRequest extends BasicRequest {
     public function __construct(Client $client, $configuration, array $data)
     {
         $this->data = $data;
-        $this->msgId = \Mihkullorg\LhvConnect\generateMessageIdentification();
+        $this->msgId = str_random(30);
 
         parent::__construct($client, $configuration);
     }
@@ -71,6 +71,7 @@ abstract class FullRequest extends BasicRequest {
                         {
                             throw new RequestDataInvalidException("FIELD " . $field . " NOT IN Y-m-d FORMAT");
                         }
+                        break;
                     case "in":
                         $acceptables = explode(',', explode(':', $rule)[1]);
                         if ( ! in_array($field, $acceptables))
@@ -79,6 +80,7 @@ abstract class FullRequest extends BasicRequest {
                                 "FIELD " . $field . " CAN BE ONLY ONE OF (" . implode(", ", $acceptables) . ")"
                             );
                         }
+                        break;
                 }
             }
             $this->fields[$field] = $this->data[$field];
@@ -89,15 +91,15 @@ abstract class FullRequest extends BasicRequest {
     {
         foreach( $data as $key => $value ) {
             if( is_array($value) ) {
-                $subnode = $xml_data->addChild(constant("Tags::$key"));
+                $subnode = $xml_data->addChild(constant("Tag::$key"));
                 self::array_to_xml($value, $subnode);
             } else {
                 if($value == "")
                 {
-                    $xml_data->addChild(constant("Tags::$key"), htmlspecialchars($this->fields[$key]));
+                    $xml_data->addChild(constant("Tag::$key"), htmlspecialchars($this->fields[$key]));
                 }else 
                 {
-                    $xml_data->addChild(constant("Tags::$key"), $value);
+                    $xml_data->addChild(constant("Tag::$key"), $value);
                 }
             }
         }

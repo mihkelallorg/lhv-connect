@@ -4,8 +4,8 @@ namespace Mihkullorg\LhvConnect;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Config;
-use Mihkullorg\LhvConnect\Request\HeartbeatGetRequest;
-use Mihkullorg\LhvConnect\Request\MerchantPaymentReportRequest;
+use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
+use Mihkullorg\LhvConnect\Requests\MerchantPaymentReportRequest;
 
 class LhvConnect {
 

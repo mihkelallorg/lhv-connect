@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihkullorg\LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Requests;
 
 use Exception;
 use ForbiddenException;
@@ -72,6 +72,6 @@ abstract class BasicRequest {
 
     protected function makeParams()
     {
-        $params['cert'] = $this->configuration['cert'];
+        $params['verify'] = $this->configuration['cert'];
     }
 }

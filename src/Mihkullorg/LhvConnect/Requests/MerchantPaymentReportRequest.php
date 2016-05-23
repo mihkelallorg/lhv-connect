@@ -1,6 +1,6 @@
 <?php
 
-namespace Mihkullorg\LhvConnect\Request;
+namespace Mihkullorg\LhvConnect\Requests;
 
 use DateInterval;
 use DateTime;

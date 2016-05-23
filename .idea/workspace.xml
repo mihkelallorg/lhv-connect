@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
     </list>
     <ignored path="lhv-connect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,40 +32,18 @@
     <favorites_list name="lhv-connect" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4672619">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="BasicRequest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#49#63#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="LhvConnect.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-                  <folding>
-                    <element signature="e#41#63#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Tag.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,10 +83,11 @@
         <option value="$PROJECT_DIR$/src/config/config.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
       </list>
     </option>
   </component>
@@ -169,11 +152,90 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mihkullorg" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LhvConnect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mihkullorg" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LhvConnect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,12 +303,15 @@
       <workItem from="1463570345164" duration="1624000" />
       <workItem from="1463583798389" duration="415000" />
       <workItem from="1463639648563" duration="8504000" />
-      <workItem from="1463724073780" duration="4065000" />
+      <workItem from="1463724073780" duration="8288000" />
+      <workItem from="1463746631908" duration="926000" />
+      <workItem from="1463844151866" duration="324000" />
+      <workItem from="1463983721263" duration="1489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46484000" />
+    <option name="totallyTimeSpent" value="53446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,7 +326,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19821429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19821429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -275,7 +340,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -296,50 +361,115 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="720">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+          <folding>
+            <marker date="1463744651000" expanded="true" signature="54:174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="225:3405" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="496:631" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="666:811" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="847:989" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="998:1175" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1463744651000" expanded="true" signature="1211:2569" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1269:2562" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1321:2496" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1382:2482" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1437:1678" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1496:1647" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1711:2000" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1806:1969" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2031:2464" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2171:2433" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2642:3191" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2693:3184" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2730:2868" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2876:3174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2909:3048" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3052:3161" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3200:3296" placeholder=" Set the (default) values for fields ..." />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+          <folding>
+            <marker date="1463744651000" expanded="true" signature="54:174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="225:3405" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="496:631" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="666:811" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="847:989" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="998:1175" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1463744651000" expanded="true" signature="1211:2569" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1269:2562" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1321:2496" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1382:2482" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1437:1678" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1496:1647" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1711:2000" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1806:1969" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2031:2464" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2171:2433" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2642:3191" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2693:3184" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2730:2868" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2876:3174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2909:3048" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3052:3161" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3200:3296" placeholder=" Set the (default) values for fields ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+          <folding>
+            <marker date="1463744651000" expanded="true" signature="54:174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="225:3405" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="496:631" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="666:811" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="847:989" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="998:1175" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1463744651000" expanded="true" signature="1211:2569" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1269:2562" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1321:2496" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1382:2482" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1437:1678" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1496:1647" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1711:2000" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1806:1969" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2031:2464" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2171:2433" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2642:3191" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2693:3184" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2730:2868" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2876:3174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2909:3048" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3052:3161" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3200:3296" placeholder=" Set the (default) values for fields ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1463725776000" expanded="true" signature="146:931" placeholder="..." />
-            <marker date="1463725776000" expanded="true" signature="155:242" placeholder=" Indicates if loading of the provider is deferred. ..." />
-            <marker date="1463725776000" expanded="true" signature="283:357" placeholder=" Bootstrap the application events. ..." />
-            <marker date="1463725776000" expanded="true" signature="386:430" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="439:510" placeholder=" Register the service provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="543:566" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="575:659" placeholder=" Get the services provided by the provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="692:723" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="760:930" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="853:922" placeholder="..." />
-            <marker date="1463725776000" expanded="true" signature="854:921" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="53:907" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="748:787" placeholder=" Request name tags ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -367,59 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="121:216" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="53:907" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="748:787" placeholder=" Request name tags ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="91:376" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ServiceUnavailableException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="56:106" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="161:296" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="44:147" placeholder=" Taken from http://stackoverflow.com/a/4356295/5122070 ..." />
-            <marker date="1463653444000" expanded="true" signature="396:471" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -434,31 +511,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1463653444000" expanded="true" signature="60:215" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/illuminate/support/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="729" column="13" selection-start-line="729" selection-start-column="13" selection-end-line="729" selection-end-column="13" />
           <folding>
-            <marker date="1463653444000" expanded="true" signature="97:315" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="243:314" placeholder="{...}" />
+            <marker date="1461245316000" expanded="false" signature="11:177" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="220:653" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="228:359" placeholder=" Assign high numeric IDs to a config item to force appending. ..." />
+            <marker date="1461245316000" expanded="true" signature="402:652" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="477:621" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="513:611" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="693:1006" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="701:899" placeholder=" Add an element to an array using &quot;dot&quot; notation if it doesn't exist. ..." />
+            <marker date="1461245316000" expanded="true" signature="946:1005" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="1048:1356" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="1056:1242" placeholder=" Build a new array using a callback. ..." />
+            <marker date="1461245316000" expanded="true" signature="1297:1355" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="1401:1617" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="1409:1528" placeholder=" Collapse an array of arrays into a single array. ..." />
+            <marker date="1461245316000" expanded="true" signature="1566:1616" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="1660:1897" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="1668:1812" placeholder=" Divide an array into two arrays. One with keys and the other with values. ..." />
+            <marker date="1461245316000" expanded="true" signature="1848:1896" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="1937:2209" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="1945:2105" placeholder=" Flatten a multi-dimensional associative array with dots. ..." />
+            <marker date="1461245316000" expanded="true" signature="2153:2208" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="2252:2530" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="2260:2431" placeholder=" Get all of the given array except for a specified array of items. ..." />
+            <marker date="1461245316000" expanded="true" signature="2474:2529" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="2572:2934" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="2580:2786" placeholder=" Return the first element in an array passing a given truth test. ..." />
+            <marker date="1461245316000" expanded="true" signature="2865:2933" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="2978:3247" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="2986:3138" placeholder=" Flatten a multi-dimensional array into a single level. ..." />
+            <marker date="1461245316000" expanded="true" signature="3189:3246" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="3290:3574" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="3298:3474" placeholder=" Remove one or many array items from a given array using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="3518:3573" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="3614:3931" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="3622:3813" placeholder=" Get an item from an array using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="3869:3930" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="3971:4238" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="3979:4147" placeholder=" Check if an item exists in an array using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="4186:4237" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="4279:4638" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="4287:4492" placeholder=" Return the last element in an array passing a given truth test. ..." />
+            <marker date="1461245316000" expanded="true" signature="4570:4637" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="4679:4935" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="4687:4840" placeholder=" Get a subset of the items from the given array. ..." />
+            <marker date="1461245316000" expanded="true" signature="4881:4934" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="4977:5289" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="4985:5171" placeholder=" Pluck an array of values from an array. ..." />
+            <marker date="1461245316000" expanded="true" signature="5227:5288" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="5333:5634" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="5341:5512" placeholder=" Push an item onto the beginning of an array. ..." />
+            <marker date="1461245316000" expanded="true" signature="5570:5633" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="5675:5978" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="5683:5857" placeholder=" Get a value from the array, and remove it. ..." />
+            <marker date="1461245316000" expanded="true" signature="5915:5977" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="6018:6403" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="6026:6295" placeholder=" Set an array item to a given value using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="6343:6402" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="6444:6710" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="6452:6598" placeholder=" Sort the array using the given callback. ..." />
+            <marker date="1461245316000" expanded="true" signature="6652:6709" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="6761:6985" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="6769:6885" placeholder=" Recursively sort an array by keys and values. ..." />
+            <marker date="1461245316000" expanded="true" signature="6929:6984" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="7027:7297" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="7035:7183" placeholder=" Filter the array using the given callback. ..." />
+            <marker date="1461245316000" expanded="true" signature="7238:7296" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="7338:7531" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="7346:7449" placeholder=" Convert a value to camel case. ..." />
+            <marker date="1461245316000" expanded="true" signature="7483:7530" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="7576:7891" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="7584:7717" placeholder=" Get the class &quot;basename&quot; of the given object / class. ..." />
+            <marker date="1461245316000" expanded="true" signature="7755:7890" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="7942:8369" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="7950:8099" placeholder=" Returns all traits used by a class, its subclasses and trait of their traits. ..." />
+            <marker date="1461245316000" expanded="true" signature="8143:8368" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="8258:8321" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="8407:8642" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="8415:8552" placeholder=" Create a collection from the given value. ..." />
+            <marker date="1461245316000" expanded="true" signature="8590:8641" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="8682:8975" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="8690:8858" placeholder=" Fill in data where it's missing. ..." />
+            <marker date="1461245316000" expanded="true" signature="8907:8974" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="9014:10222" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9022:9218" placeholder=" Get an item from an array or object using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="9274:10221" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="9309:9346" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9466:10189" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9502:9859" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9555:9618" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9650:9711" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="9939:9997" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10058:10118" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10126:10179" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10261:12169" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10269:10489" placeholder=" Set an item on an array or object using dot notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="10556:12168" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="10686:11101" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10732:10775" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10806:10953" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10853:10939" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="10976:11091" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11023:11077" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11138:11501" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11167:11375" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11223:11284" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11434:11491" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11532:11893" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11561:11769" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11613:11676" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11824:11883" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11901:12136" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="11957:12046" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12069:12126" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12202:12466" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12210:12317" placeholder=" Dump the passed variables and end the script. ..." />
+            <marker date="1461245316000" expanded="true" signature="12337:12465" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="12362:12440" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12377:12422" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12498:12844" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12506:12651" placeholder=" Escape HTML entities in a string. ..." />
+            <marker date="1461245316000" expanded="true" signature="12676:12843" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="12724:12770" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12884:13170" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="12892:13060" placeholder=" Determine if a given string ends with a given substring. ..." />
+            <marker date="1461245316000" expanded="true" signature="13106:13169" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="13205:13417" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="13213:13346" placeholder=" Get the first element of an array. Useful for method chaining. ..." />
+            <marker date="1461245316000" expanded="true" signature="13374:13416" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="13452:13635" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="13460:13566" placeholder=" Get the last element from an array. ..." />
+            <marker date="1461245316000" expanded="true" signature="13594:13634" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="13676:14280" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="13684:13865" placeholder=" Get an item from an object using &quot;dot&quot; notation. ..." />
+            <marker date="1461245316000" expanded="true" signature="13923:14279" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="13978:14015" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14068:14247" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14140:14193" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14327:14861" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14335:14548" placeholder=" Replace a given pattern with each value in the array in sequentially. ..." />
+            <marker date="1461245316000" expanded="true" signature="14616:14860" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="14660:14852" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14710:14841" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14766:14830" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14902:15160" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="14910:15048" placeholder=" Convert a string to snake case. ..." />
+            <marker date="1461245316000" expanded="true" signature="15100:15159" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="15202:15494" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="15210:15380" placeholder=" Determine if a given string starts with a given substring. ..." />
+            <marker date="1461245316000" expanded="true" signature="15428:15493" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="15537:15825" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="15545:15712" placeholder=" Determine if a given string contains a given substring. ..." />
+            <marker date="1461245316000" expanded="true" signature="15761:15824" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="15866:16123" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="15874:16028" placeholder=" Cap a string with a single instance of a given value. ..." />
+            <marker date="1461245316000" expanded="true" signature="16068:16122" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="16160:16418" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="16168:16323" placeholder=" Determine if a given string matches a given pattern. ..." />
+            <marker date="1461245316000" expanded="true" signature="16363:16417" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="16458:16763" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="16466:16640" placeholder=" Limit the number of characters in a string. ..." />
+            <marker date="1461245316000" expanded="true" signature="16701:16762" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="16804:17057" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="16812:16954" placeholder=" Get the plural form of an English word. ..." />
+            <marker date="1461245316000" expanded="true" signature="17000:17056" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="17098:17359" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="17106:17269" placeholder=" Generate a more truly &quot;random&quot; alpha-numeric string. ..." />
+            <marker date="1461245316000" expanded="true" signature="17309:17358" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="17407:17847" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="17415:17616" placeholder=" Replace a given value in the string sequentially with an array. ..." />
+            <marker date="1461245316000" expanded="true" signature="17684:17846" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="17729:17813" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="17895:18239" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="17903:18101" placeholder=" Replace the first occurrence of a given value in the string. ..." />
+            <marker date="1461245316000" expanded="true" signature="18163:18238" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="18286:18627" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="18294:18491" placeholder=" Replace the last occurrence of a given value in the string. ..." />
+            <marker date="1461245316000" expanded="true" signature="18552:18626" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="18670:18879" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="18678:18792" placeholder=" Get the singular form of an English word. ..." />
+            <marker date="1461245316000" expanded="true" signature="18828:18878" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="18918:19193" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="18926:19084" placeholder=" Generate a URL friendly &quot;slug&quot; from a given string. ..." />
+            <marker date="1461245316000" expanded="true" signature="19134:19192" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="19235:19436" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="19243:19352" placeholder=" Convert a value to studly caps case. ..." />
+            <marker date="1461245316000" expanded="true" signature="19387:19435" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="19477:19670" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="19485:19588" placeholder=" Convert a value to title case. ..." />
+            <marker date="1461245316000" expanded="true" signature="19622:19669" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="19721:20073" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="19729:19851" placeholder=" Returns all traits used by a trait and its traits. ..." />
+            <marker date="1461245316000" expanded="true" signature="19895:20072" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="19978:20040" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="20109:20336" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="20117:20232" placeholder=" Return the default value of the given value. ..." />
+            <marker date="1461245316000" expanded="true" signature="20261:20335" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="20377:20585" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="20385:20485" placeholder=" Determine whether the current environment is Windows based. ..." />
+            <marker date="1461245316000" expanded="true" signature="20513:20584" placeholder="{...}" />
+            <marker date="1461245316000" expanded="true" signature="20620:20811" placeholder="..." />
+            <marker date="1461245316000" expanded="true" signature="20628:20745" placeholder=" Return the given object. Useful for chaining. ..." />
+            <marker date="1461245316000" expanded="true" signature="20774:20810" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -467,53 +735,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1463725776000" expanded="true" signature="146:931" placeholder="..." />
-            <marker date="1463725776000" expanded="true" signature="155:242" placeholder=" Indicates if loading of the provider is deferred. ..." />
-            <marker date="1463725776000" expanded="true" signature="283:357" placeholder=" Bootstrap the application events. ..." />
-            <marker date="1463725776000" expanded="true" signature="386:430" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="439:510" placeholder=" Register the service provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="543:566" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="575:659" placeholder=" Get the services provided by the provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="692:723" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="760:930" placeholder="{...}" />
-            <marker date="1463725776000" expanded="true" signature="853:922" placeholder="..." />
-            <marker date="1463725776000" expanded="true" signature="854:921" placeholder="..." />
+            <marker date="1463653444000" expanded="true" signature="121:216" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ServiceUnavailableException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
-            <marker date="1463728087000" expanded="true" signature="53:112" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="165:2346" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="439:503" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="532:762" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="788:1587" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="829:1580" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="861:965" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1004:1569" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1098:1226" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1148:1207" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1265:1316" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1358:1554" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1398:1502" placeholder="..." />
-            <marker date="1463728087000" expanded="true" signature="1637:1674" placeholder="{...}" />
-            <marker date="1463728087000" expanded="true" signature="1714:2261" placeholder="{...}" />
-            <marker date="1463728087000" expanded="true" signature="2303:2345" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="54:174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="225:3405" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="496:631" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="666:811" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="847:989" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="998:1175" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1463744651000" expanded="true" signature="1211:2569" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1269:2562" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1321:2496" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1382:2482" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1437:1678" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1496:1647" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="1711:2000" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="1806:1969" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2031:2464" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2171:2433" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2642:3191" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="2693:3184" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2730:2868" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2876:3174" placeholder="..." />
+            <marker date="1463744651000" expanded="true" signature="2909:3048" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3052:3161" placeholder="{...}" />
+            <marker date="1463744651000" expanded="true" signature="3200:3296" placeholder=" Set the (default) values for fields ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="993">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
           <folding>
-            <element signature="e#49#63#0#PHP" expanded="true" />
+            <marker date="1463744582000" expanded="true" signature="54:257" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="288:2017" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="473:593" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="628:791" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="859:1213" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="925:1031" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1036:1207" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1266:1375" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1428:1847" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1457:1840" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1499:1570" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1622:1679" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1754:1831" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1946:2016" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <marker date="1463744582000" expanded="false" signature="54:113" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="166:2347" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="440:504" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="533:763" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="789:1588" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="830:1581" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="862:966" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1005:1570" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1099:1227" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1149:1208" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1266:1317" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1359:1555" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1399:1503" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="1638:1675" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1715:2262" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="2304:2346" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -523,59 +854,41 @@
         <state relative-caret-position="120">
           <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
-            <marker date="1463653444000" expanded="true" signature="53:112" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="170:1443" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="425:553" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="582:667" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="693:839" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="732:833" placeholder="..." />
-            <marker date="1463653444000" expanded="true" signature="886:923" placeholder="{...}" />
-            <marker date="1463653444000" expanded="true" signature="932:1028" placeholder=" Set the (default) values for fields ..." />
-            <marker date="1463653444000" expanded="true" signature="1069:1358" placeholder="{...}" />
-            <marker date="1463653444000" expanded="true" signature="1400:1442" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1463730450000" expanded="true" signature="53:173" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="224:3385" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="495:670" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="705:850" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="886:1028" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="1037:1214" placeholder=" Checks if the data the user entered, matches the rules ..." />
-            <marker date="1463730450000" expanded="true" signature="1250:2546" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="1308:2539" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="1360:2473" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="1421:2459" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="1476:1717" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="1535:1686" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="1750:2008" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="1845:2008" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="2039:2441" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="2179:2441" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="2619:3171" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="2670:3164" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="2707:2846" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="2854:3154" placeholder="..." />
-            <marker date="1463730450000" expanded="true" signature="2887:3027" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="3031:3141" placeholder="{...}" />
-            <marker date="1463730450000" expanded="true" signature="3180:3276" placeholder=" Set the (default) values for fields ..." />
+            <marker date="1463744582000" expanded="true" signature="54:113" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="171:1444" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="426:554" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="583:668" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="694:840" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="733:834" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="887:924" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="933:1029" placeholder=" Set the (default) values for fields ..." />
+            <marker date="1463744582000" expanded="true" signature="1070:1359" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="1401:1443" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
-            <element signature="e#41#63#0#PHP" expanded="true" />
+            <marker date="1463744582000" expanded="true" signature="45:223" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="243:998" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="337:502" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="448:493" placeholder="..." />
+            <marker date="1463744582000" expanded="true" signature="549:691" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="739:766" placeholder="{...}" />
+            <marker date="1463744582000" expanded="true" signature="837:995" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

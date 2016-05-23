@@ -2,7 +2,7 @@
 
 namespace Mihkullorg\LhvConnect;
 
-class Tags {
+class Tag {
 
     const
         ACCOUNT = "Acct",
