@@ -2,11 +2,28 @@
 
 return [
     'name' => [
-        'cert' => "",
+        'url' => "https://connect.lhv.eu",
+        'cert' => [
+            'path' => "",
+            'password' => "",
+        ],
         'IBAN' => "",
+        'responseHandlers' => [
+            'MerchantPaymentReport' => "",
+            'AccountStatement' => "",
+        ],
     ],
     'name2' => [
-        'cert' => "",
+        'url' => "https://connect.lhv.eu",
+        'cert' => [
+            'path' => "",
+            'password' => "",
+        ],
         'IBAN' => "",
-    ]
+        'responseHandlers' => [
+            'MerchantPaymentReport' => "",
+            'AccountStatement' => "",
+        ],
+    ],
+
 ];

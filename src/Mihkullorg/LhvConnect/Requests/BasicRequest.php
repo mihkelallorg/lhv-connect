@@ -2,76 +2,38 @@
 
 namespace Mihkullorg\LhvConnect\Requests;
 
-use Exception;
-use ForbiddenException;
 use GuzzleHttp\Client;
-use Mihkullorg\LhvConnect\Exceptions\ServiceUnavailableException;
-use Mihkullorg\LhvConnect\ResponseCode;
-use Psr\Http\Message\ResponseInterface;
+use GuzzleHttp\RequestOptions;
 
 abstract class BasicRequest {
 
     protected $url;
     protected $method;
     protected $client;
-    protected $params;
     protected $configuration;
+    protected $body;
+    protected $headers;
 
-    public function __construct(Client $client, $configuration)
+
+    public function __construct(Client $client, $configuration, $body = null, $headers = [])
     {
         $this->client = $client;
         $this->configuration = $configuration;
-        $this->params = [];
+        $this->headers = $headers;
+        $this->body = $body;
     }
 
     public function sendRequest()
     {
-        $this->makeParams();
-
-        $response = $this->client->request($this->method, $this->url);
-
-        return $this->handleResponse($response);
-    }
-
-    protected function handleResponse(ResponseInterface $response)
-    {
-        if ($response->getStatusCode() != ResponseCode::OK)
-        {
-            $this->handleError($response->getStatusCode(), $response->getBody());    
-        } else
-        {
-            $message = $this->getMessageFromContainer($response->getHeader('Message-Request-Id'));
-
-            return $this->handleMessage($message);
-        }
-    }
-
-    protected function getMessageFromContainer($id)
-    {
-        $response = $this->client->request('GET', 'messages/' . $id);
-
+        $response = $this->client->request($this->method, $this->url, [
+            RequestOptions::CERT => [
+                $this->configuration['cert']['path'],
+                $this->configuration['cert']['password'],
+            ],
+            RequestOptions::BODY => $this->body,
+            RequestOptions::HEADERS => $this->headers,
+        ]);
+        
         return $response;
-    }
-
-    protected function handleError($code, $message)
-    {
-        switch($code){
-            case ResponseCode::FORBIDDEN:
-                throw new ForbiddenException();
-                break;
-            case ResponseCode::SERVICE_UNAVAILABLE:
-                throw new ServiceUnavailableException();
-            case ResponseCode::INTERNAL_SERVER_ERROR:
-            default:
-                throw new Exception($message, $code);
-                break;
-        }
-    }
-    
-    protected abstract function handleMessage($message);
-
-    protected function makeParams()
-    {
-        $params['verify'] = $this->configuration['cert'];
     }
 }

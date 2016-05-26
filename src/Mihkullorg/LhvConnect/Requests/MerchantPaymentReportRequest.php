@@ -4,18 +4,14 @@ namespace Mihkullorg\LhvConnect\Requests;
 
 use DateInterval;
 use DateTime;
-use Mihkullorg\LhvConnect\Tags;
+use Mihkullorg\LhvConnect\Tag;
 
 class MerchantPaymentReportRequest extends FullRequest {
-
-    protected $data;
-    protected $client;
-    protected $xmlFile;
 
     protected $url = "merchant-report";
     protected $method = "POST";
 
-    protected $xmlTag = Tags::MERCHANT_REPORT_REQUEST;
+    protected $xmlTag = Tag::MERCHANT_REPORT_REQUEST;
     protected $xmlFormat = "";
 
     protected $rules = [
@@ -31,17 +27,10 @@ class MerchantPaymentReportRequest extends FullRequest {
     ];
 
     protected $xml = [
-        'MERCHANT_REPORT_REQUEST' => [
-            'TYPE' => "",
-            'PERIOD_START' => "",
-            'PERIOD_END' => "",
-        ]
+        'TYPE' => "",
+        'PERIOD_START' => "",
+        'PERIOD_END' => "",
     ];
-
-    public function handleMessage($message)
-    {
-        return $message;
-    }
 
     /**
      * Set the (default) values for fields
@@ -52,7 +41,7 @@ class MerchantPaymentReportRequest extends FullRequest {
         $this->fields['TYPE'] = "CAMT_SETTLEMENT";
         $dateTime = new DateTime(); // It's now
         $this->fields['PERIOD_START'] = $dateTime->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month
-        $this->fields['PERIOD_END'] = $dateTime->format('Y-m-d');
+        $this->fields['PERIOD_END'] = (new DateTime())->format('Y-m-d');
     }
 
     protected function prepareXmlArray()

@@ -31,7 +31,10 @@ class Tag {
          */
 
         ACCOUNT_STATEMENT_REQUEST = "AcctRptgReq",
-        MERCHANT_REPORT_REQUEST = "MerchantReportRequest"
+        MERCHANT_REPORT_REQUEST = "MerchantReportRequest",
+        
+        ACCOUNT_STATEMENT_RESPONSE = "BkToCstmrStmt",
+        MERCHANT_REPORT_RESPONSE = "BkToCstmrDbtCdtNtfctn"
     ;
 
 }

@@ -4,75 +4,64 @@ namespace Mihkullorg\LhvConnect\Requests;
 
 use DateInterval;
 use DateTime;
-use Mihkullorg\LhvConnect\Tags;
+use Mihkullorg\LhvConnect\Tag;
 
 class AccountStatementRequest extends FullRequest {
-
-    protected $data;
-    protected $client;
-    protected $xmlFile;
-
+    
     protected $url = "account-statement";
     protected $method = "POST";
 
-    protected $xmlTag = Tags::ACCOUNT_STATEMENT_REQUEST;
+    protected $xmlTag = Tag::ACCOUNT_STATEMENT_REQUEST;
     protected $xmlFormat = "camt.060.001.03";
 
     protected $rules = [
         'FROM_DATE' => 'date',
-        'TO_DATE' => 'date'
+        'TO_DATE' => 'date',
     ];
 
     protected $fields = [
         'MESSAGE_IDENTIFICATION' => "",
         'CREATION_DATETIME' => "",
         'IBAN' => "",
+        'PARTY' => "",
         'FROM_DATE' => "",
         'TO_DATE' => "",
         'TYPE' => "",
-        'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => ""
+        'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
     ];
 
     protected $xml = [
-        'ACCOUNT_STATEMENT_REQUEST' => [
-            'GROUP_HEADER' => [
-                'MESSAGE_IDENTIFICATION' => "",
-                'CREATION_DATETIME' => "",
+        'GROUP_HEADER' => [
+            'MESSAGE_IDENTIFICATION' => "",
+            'CREATION_DATETIME' => "",
+        ],
+        'REPORTING_REQUEST' => [
+            'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
+            'ACCOUNT' => [
+                'ACCOUNT_IDENTIFICATION' => [
+                    'IBAN' => "",
+                ],
             ],
-            'REPORTING_REQUEST' => [
-                'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
-                'ACCOUNT' => [
-                    'ACCOUNT_IDENTIFICATION' => [
-                        'IBAN' => "",
-                    ],
+            'ACCOUNT_OWNER' => [
+                'PARTY' => "",
+            ],
+            'REPORTING_PERIOD' => [
+                'FROM_TO_DATE' => [
+                    'FROM_DATE' => "",
+                    'TO_DATE' => "",
                 ],
-                'ACCOUNT_OWNER' => [
-                    'PARTY' => ""
-                ],
-                'REPORTING_PERIOD' => [
-                    'FROM_TO_DATE' => [
-                        'FROM_DATE' => "",
-                        'TO_DATE' => ""
-                    ],
-                    'TYPE' => ""
-                ],
+                'TYPE' => "",
             ],
         ],
     ];
-
-    protected function handleMessage($message)
-    {
-        return $message;
-    }
 
     protected function prepareFields()
     {
         $this->fields['MESSAGE_IDENTIFICATION'] = $this->msgId;
         $this->fields['IBAN'] = $this->configuration['IBAN'];
-        $dateTime = new DateTime(); // It's now
-        $this->fields['CREATION_DATETIME'] = $dateTime::ISO8601;
-        $this->fields['FROM_DATE'] = $dateTime->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month
-        $this->fields['TO_DATE'] = $dateTime->format('Y-m-d');
+        $this->fields['CREATION_DATETIME'] = (new DateTime())->format(DateTime::ISO8601);
+        $this->fields['FROM_DATE'] = (new DateTime)->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month
+        $this->fields['TO_DATE'] = (new DateTime())->format('Y-m-d');
 
         $this->fields['TYPE'] = "ALLL";
         $this->fields['REQUESTED_MESSAGE_NAME_IDENTIFICATION'] = $this->xmlFormat;

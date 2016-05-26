@@ -3,8 +3,8 @@
 namespace Mihkullorg\LhvConnect\Requests;
 
 use DateTime;
+use Exception;
 use GuzzleHttp\Client;
-use Mihkullorg\LhvConnect\Exceptions\RequestDataInvalidException;
 use SimpleXMLElement;
 
 abstract class FullRequest extends BasicRequest {
@@ -22,26 +22,27 @@ abstract class FullRequest extends BasicRequest {
     protected $xml;
 
 
-    public function __construct(Client $client, $configuration, array $data)
+    public function __construct(Client $client, $configuration, array $data, $body = null, $headers = [])
     {
+        parent::__construct($client, $configuration, $body, $headers);
+
         $this->data = $data;
         $this->msgId = str_random(30);
 
-        parent::__construct($client, $configuration);
     }
 
     public function sendRequest()
     {
         $this->prepareFields();
         $this->validate();
-        $xml = $this->createXML();
+        $this->body = $this->createXML();
 
         return parent::sendRequest();
     }
 
     protected function createXML()
     {
-        $xml = new SimpleXMLElement($this->xmlTag);
+        $xml = new SimpleXMLElement("<$this->xmlTag></$this->xmlTag>");
         $this->array_to_xml($this->xml, $xml);
 
         return $xml->asXML();
@@ -51,7 +52,7 @@ abstract class FullRequest extends BasicRequest {
      * Checks if the data the user entered, matches the rules
      * If a field matches the rules, it's saved to $fields
      *
-     * @throws RequestDataInvalidException
+     * @throws Exception
      */
     protected function validate()
     {
@@ -63,27 +64,33 @@ abstract class FullRequest extends BasicRequest {
                     case "required":
                         if ( ! isset($this->data[$field]))
                         {
-                            throw new RequestDataInvalidException("FIELD " . $field . " MISSING");
+                            throw new Exception("FIELD " . $field . " MISSING", 400);
                         }
                         break;
                     case "date":
-                        if (DateTime::createFromFormat('Y-m-d', $this->data[$field]) == false)
+                        if (isset($this->data[$field]) and DateTime::createFromFormat('Y-m-d', $this->data[$field]) == false)
                         {
-                            throw new RequestDataInvalidException("FIELD " . $field . " NOT IN Y-m-d FORMAT");
+                            throw new Exception("FIELD " . $field . " NOT IN Y-m-d FORMAT", 400);
                         }
                         break;
                     case "in":
-                        $acceptables = explode(',', explode(':', $rule)[1]);
-                        if ( ! in_array($field, $acceptables))
-                        {
-                            throw new RequestDataInvalidException(
-                                "FIELD " . $field . " CAN BE ONLY ONE OF (" . implode(", ", $acceptables) . ")"
-                            );
+                        if (isset($this->data[$field])){
+                            $acceptables = explode(',', explode(':', $rule)[1]);
+                            if ( ! in_array($this->data[$field], $acceptables))
+                            {
+                                throw new Exception(
+                                    "FIELD " . $field . " CAN BE ONLY ONE OF (" . implode(", ", $acceptables) . ")",
+                                    400
+                                );
+                            }
                         }
                         break;
                 }
             }
-            $this->fields[$field] = $this->data[$field];
+            if (isset($this->data[$field]))
+            {
+                $this->fields[$field] = $this->data[$field];
+            }
         }
     }
 
@@ -91,15 +98,15 @@ abstract class FullRequest extends BasicRequest {
     {
         foreach( $data as $key => $value ) {
             if( is_array($value) ) {
-                $subnode = $xml_data->addChild(constant("Tag::$key"));
+                $subnode = $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"));
                 self::array_to_xml($value, $subnode);
             } else {
                 if($value == "")
                 {
-                    $xml_data->addChild(constant("Tag::$key"), htmlspecialchars($this->fields[$key]));
+                    $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), htmlspecialchars($this->fields[$key]));
                 }else 
                 {
-                    $xml_data->addChild(constant("Tag::$key"), $value);
+                    $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), $value);
                 }
             }
         }
