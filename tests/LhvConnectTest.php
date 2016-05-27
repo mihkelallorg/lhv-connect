@@ -212,6 +212,12 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $retrievedMessageText = file_get_contents("tests/account-statement.xml");
 
         $this->assertEquals($xmlResponse, $retrievedMessageText);
+
+
+        if (file_exists("tests/account-statement.xml"))
+        {
+            unlink("tests/account-statement.xml");
+        }
     }
 
     /**
@@ -291,6 +297,10 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals($xmlResponse, $retrievedMessageText);
 
+        if (file_exists("tests/merchant-report.xml"))
+        {
+            unlink("tests/merchant-report.xml");
+        }
     }
     
 }
