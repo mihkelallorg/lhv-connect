@@ -142,9 +142,6 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
          */
         $handler = HandlerStack::create(new MockHandler([
             new Response(202), //MerchantPaymentRequest
-            new Response(200, ['Message-Response-Id' => $messageRID, 'Content-Length' => 5], $xmlResponse), //InboxRequest
-            new Response(200), //Deleterequest
-            new Response(200, ['Content-Length' => 0], ""), //InboxRequest, no more messages
         ]));
         $handler->push($history);
 
@@ -174,34 +171,35 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals('account-statement', $retrievedRequests[0]['request']->getRequestTarget());
 
-        file_put_contents("account-statement.xml", (string) $retrievedRequests[0]['request']->getBody());
         /**
          * Response with the same structure will be sent from the server
          */
         $expectedXml = "<?xml version=\"1.0\"?>
-        <AcctRptgReq>
-            <GrpHdr>
-                <MsgId></MsgId>
-                <CrdDtTm>" . (new DateTime())->format(DateTime::ISO8601) . "</CrdDtTm>
-            </GrpHdr>
-            <RptgReq>
-                <ReqdMsgNmId>camt.060.001.03</ReqdMsgNmId>
-                <Acct>
-                    <Id>
-                        <IBAN>" . $conf['IBAN'] . "</IBAN>
-                    </Id>
-                </Acct>
-                <AcctOwnr>
-                    <Pty></Pty>
-                </AcctOwnr>
-                <RptgPrd>
-                    <FrToDt>
-                        <FrDt>" . (new DateTime)->sub(new DateInterval('P1M'))->format('Y-m-d') . "</FrDt>
-                        <ToDt>" . (new DateTime())->format('Y-m-d') . "</ToDt>
-                    </FrToDt>
-                </RptgPrd>
-            </RptgReq>
-        </AcctRptgReq>";
+        <Document xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.060.001.03\">
+            <AcctRptgReq>
+                <GrpHdr>
+                    <MsgId></MsgId>
+                    <CrdDtTm>" . (new DateTime())->format(DateTime::ISO8601) . "</CrdDtTm>
+                </GrpHdr>
+                <RptgReq>
+                    <ReqdMsgNmId>camt.060.001.03</ReqdMsgNmId>
+                    <Acct>
+                        <Id>
+                            <IBAN>" . $conf['IBAN'] . "</IBAN>
+                        </Id>
+                    </Acct>
+                    <AcctOwnr>
+                        <Pty></Pty>
+                    </AcctOwnr>
+                    <RptgPrd>
+                        <FrToDt>
+                            <FrDt>" . (new DateTime)->sub(new DateInterval('P1M'))->format('Y-m-d') . "</FrDt>
+                            <ToDt>" . (new DateTime())->format('Y-m-d') . "</ToDt>
+                        </FrToDt>
+                    </RptgPrd>
+                </RptgReq>
+            </AcctRptgReq>
+        </Document>";
         $expectedXmlObject = new \SimpleXMLElement($expectedXml);
 
         /**
@@ -211,8 +209,8 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $retrievedXml = $retrievedRequests[0]['request']->getBody()->getContents();
         $retrievedXmlObject = new \SimpleXMLElement($retrievedXml);
         
-        $msgId = $retrievedXmlObject->children()->GrpHdr->MsgId;
-        $expectedXmlObject->children()->GrpHdr->addChild('MsgId', $msgId);
+        $msgId = $retrievedXmlObject->AcctRptgReq->GrpHdr->MsgId;
+        $expectedXmlObject->AcctRptgReq->GrpHdr->addChild('MsgId', $msgId);
 
         $this->assertEquals($retrievedXmlObject->asXml(), $retrievedXmlObject->asXml());
     }
@@ -243,9 +241,6 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $handler = HandlerStack::create(new MockHandler([
             new Response(202), //MerchantPaymentRequest
-            new Response(200, ['Message-Response-Id' => $messageRID, 'Content-Length' => 5], $xmlResponse), //InboxRequest
-            new Response(200), //Deleterequest
-            new Response(200, ['Content-Length' => 0], ""), //InboxRequest, no more messages
         ]));
         $handler->push($history);
 
@@ -257,23 +252,17 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $lhv->setClient($client);
 
-        $messages = $lhv->makeMerchantPaymentReportRequest();
+        $lhv->makeMerchantPaymentReportRequest();
 
-        $this->assertCount(4, $retrievedRequests);
-        $this->assertCount(1, $messages);
+        $this->assertCount(1, $retrievedRequests);
 
         $this->assertEquals('POST', $retrievedRequests[0]['request']->getMethod());
-        $this->assertEquals('GET', $retrievedRequests[1]['request']->getMethod());
-        $this->assertEquals('DELETE', $retrievedRequests[2]['request']->getMethod());
-        $this->assertEquals('GET', $retrievedRequests[3]['request']->getMethod());
 
         $this->assertEquals('merchant-report', $retrievedRequests[0]['request']->getRequestTarget());
-        $this->assertEquals('/messages/next', $retrievedRequests[1]['request']->getRequestTarget());
-        $this->assertEquals('/messages/' . $messageRID, $retrievedRequests[2]['request']->getRequestTarget());
-        $this->assertEquals('/messages/next', $retrievedRequests[3]['request']->getRequestTarget());
+
 
         $expectedXml = "<?xml version=\"1.0\"?>
-        <MerchantReportRequest><Tp>CAMT_SETTLEMENT</Tp><PeriodStart>" .
+        <MerchantReportRequest><Type>CAMT_SETTLEMENT</Type><PeriodStart>" .
             (new DateTime())->sub(new DateInterval('P1M'))->format('Y-m-d')
             . "</PeriodStart><PeriodEnd>" .
             (new DateTime())->format('Y-m-d')

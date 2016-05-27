@@ -15,6 +15,7 @@ abstract class FullRequest extends BasicRequest {
     protected $xmlTag;
     protected $xmlFormat;
     protected $fields; //All the fields that are set in the xml
+    protected $attributes;
     
     protected $rules; //The rules for user input ($data)
 

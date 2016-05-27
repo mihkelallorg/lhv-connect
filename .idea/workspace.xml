@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/LhvConnectTest.php" afterPath="$PROJECT_DIR$/tests/LhvConnectTest.php" />
     </list>
     <ignored path="lhv-connect.iws" />
@@ -29,12 +28,38 @@
     <splitter split-orientation="horizontal" split-proportion="0.496875">
       <split-first>
         <leaf>
-          <file leaf-file-name="Tag.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
+          <file leaf-file-name="LhvConnectTest.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-                  <folding />
+                <state relative-caret-position="798">
+                  <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#47#64#0#PHP" expanded="true" />
+                    <marker date="1464345508000" expanded="true" signature="889:914" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="889:971" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="3730:3857" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="3762:3833" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5115:6080" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5141:6060" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5166:5232" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5166:5233" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5166:5319" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5345:6033" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5435:5585" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5464:5499" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5464:5500" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5464:5557" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5616:5684" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5714:6006" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5747:5782" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5747:5893" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5747:5894" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="5747:5975" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="7449:7588" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="7489:7506" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="7489:7507" placeholder="..." />
+                    <marker date="1464345508000" expanded="true" signature="7489:7564" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -46,8 +71,8 @@
           <file leaf-file-name="AccountStatementRequest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+                <state relative-caret-position="123">
+                  <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
                   <folding>
                     <element signature="e#50#67#0#PHP" expanded="true" />
                   </folding>
@@ -104,13 +129,13 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/config/config.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
-        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
         <option value="$PROJECT_DIR$/account-statement.xml" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
+        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
       </list>
     </option>
   </component>
@@ -257,12 +282,12 @@
       <workItem from="1463992108448" duration="9631000" />
       <workItem from="1464076187212" duration="14927000" />
       <workItem from="1464162377996" duration="4645000" />
-      <workItem from="1464245254212" duration="24267000" />
+      <workItem from="1464245254212" duration="26449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110200000" />
+    <option name="totallyTimeSpent" value="112382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -317,34 +342,34 @@
         <state relative-caret-position="1125">
           <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
           <folding>
-            <marker date="1464337074000" expanded="true" signature="54:123" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="174:4286" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="699:852" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="861:963" placeholder=" @return mixed|\Psr\Http\Message\ResponseInterface ..." />
-            <marker date="1464337074000" expanded="true" signature="999:1151" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1160:1229" placeholder=" Return the xml as a string ..." />
-            <marker date="1464337074000" expanded="true" signature="1266:1428" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1437:1596" placeholder=" Checks if the data the user entered, matches the rules ..." />
-            <marker date="1464337074000" expanded="true" signature="1632:3248" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1690:3241" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="1742:3069" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1803:3055" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1858:2086" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="1917:2055" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="2119:2426" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2245:2395" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="2457:3037" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2514:3005" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2675:2980" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3143:3232" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3257:3376" placeholder=" Transforms the xml array to XML ..." />
-            <marker date="1464337074000" expanded="true" signature="3456:4077" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3507:4070" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3544:3706" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3714:4060" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3747:3910" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3914:4047" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="4086:4182" placeholder=" Set the (default) values for fields ..." />
+            <marker date="1464343856000" expanded="true" signature="54:123" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="174:4313" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="726:879" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="888:990" placeholder=" @return mixed|\Psr\Http\Message\ResponseInterface ..." />
+            <marker date="1464343856000" expanded="true" signature="1026:1178" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1187:1256" placeholder=" Return the xml as a string ..." />
+            <marker date="1464343856000" expanded="true" signature="1293:1455" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1464:1623" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1464343856000" expanded="true" signature="1659:3275" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1717:3268" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="1769:3096" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1830:3082" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1885:2113" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="1944:2082" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="2146:2453" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2272:2422" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="2484:3064" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2541:3032" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2702:3007" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3170:3259" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3284:3403" placeholder=" Transforms the xml array to XML ..." />
+            <marker date="1464343856000" expanded="true" signature="3483:4104" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3534:4097" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3571:3733" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3741:4087" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3774:3937" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3941:4074" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="4113:4209" placeholder=" Set the (default) values for fields ..." />
           </folding>
         </state>
       </provider>
@@ -1491,125 +1516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <marker date="1464337074000" expanded="true" signature="54:123" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="174:4286" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="699:852" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="861:963" placeholder=" @return mixed|\Psr\Http\Message\ResponseInterface ..." />
-            <marker date="1464337074000" expanded="true" signature="999:1151" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1160:1229" placeholder=" Return the xml as a string ..." />
-            <marker date="1464337074000" expanded="true" signature="1266:1428" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1437:1596" placeholder=" Checks if the data the user entered, matches the rules ..." />
-            <marker date="1464337074000" expanded="true" signature="1632:3248" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1690:3241" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="1742:3069" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1803:3055" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="1858:2086" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="1917:2055" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="2119:2426" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2245:2395" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="2457:3037" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2514:3005" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="2675:2980" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3143:3232" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3257:3376" placeholder=" Transforms the xml array to XML ..." />
-            <marker date="1464337074000" expanded="true" signature="3456:4077" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3507:4070" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3544:3706" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3714:4060" placeholder="..." />
-            <marker date="1464337074000" expanded="true" signature="3747:3910" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="3914:4047" placeholder="{...}" />
-            <marker date="1464337074000" expanded="true" signature="4086:4182" placeholder=" Set the (default) values for fields ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
-          <folding>
-            <marker date="1464339541000" expanded="true" signature="51:364" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="423:9749" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="437:456" placeholder=" @test ..." />
-            <marker date="1464339541000" expanded="true" signature="521:2061" placeholder="{...}" />
-            <marker date="1464339541000" expanded="true" signature="545:716" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="731:779" placeholder=" The response from the bank ..." />
-            <marker date="1464339541000" expanded="true" signature="889:914" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="889:971" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="988:1055" placeholder=" Prepare container for the requests to be made ..." />
-            <marker date="1464339541000" expanded="true" signature="1163:1281" placeholder=" Heartbeat request returns the timestamp. ..." />
-            <marker date="1464339541000" expanded="true" signature="1324:1401" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="1341:1399" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="1469:1513" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="1635:1676" placeholder=" Only 1 request made ..." />
-            <marker date="1464339541000" expanded="true" signature="1793:1848" placeholder=" Make sure the request was correct ..." />
-            <marker date="1464339541000" expanded="true" signature="2070:2089" placeholder=" @test ..." />
-            <marker date="1464339541000" expanded="true" signature="2157:2911" placeholder="{...}" />
-            <marker date="1464339541000" expanded="true" signature="2181:2352" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="2461:2528" placeholder=" 1 request, heartbeat doesn't use inbox system ..." />
-            <marker date="1464339541000" expanded="true" signature="2571:2630" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="2588:2628" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="2698:2742" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="2920:2939" placeholder=" @test ..." />
-            <marker date="1464339541000" expanded="true" signature="3007:6917" placeholder="{...}" />
-            <marker date="1464339541000" expanded="true" signature="3031:3212" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="3227:3294" placeholder=" Prepare container for the requests to be made ..." />
-            <marker date="1464339541000" expanded="true" signature="3439:3497" placeholder=" Prepare the response from the server ..." />
-            <marker date="1464339541000" expanded="true" signature="3730:3857" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="3762:3833" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="3873:3930" placeholder=" Prepare 4 responses for 4 requests. ..." />
-            <marker date="1464339541000" expanded="true" signature="3973:4320" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="3990:4318" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="4369:4455" placeholder=" Create LhvConnect with custom Client, which catches the requests ..." />
-            <marker date="1464339541000" expanded="true" signature="4488:4532" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="4668:4788" placeholder=" Total of 4 request must have been made ..." />
-            <marker date="1464339541000" expanded="true" signature="4854:4910" placeholder=" Check all the request were correct ..." />
-            <marker date="1464339541000" expanded="true" signature="5220:5303" placeholder=" Response with the same structure will be sent from the server ..." />
-            <marker date="1464339541000" expanded="true" signature="5374:6205" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5395:5453" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5395:5454" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5395:5536" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5558:6182" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5640:5774" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5665:5696" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5665:5697" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5665:5750" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5801:5861" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5887:6159" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5916:5947" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5916:6054" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5916:6055" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="5916:6132" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="6287:6518" placeholder=" As MsgId is generated in the Request class, we have no way to know it before the request is created ..." />
-            <marker date="1464339541000" expanded="true" signature="6926:6945" placeholder=" @test ..." />
-            <marker date="1464339541000" expanded="true" signature="7012:9747" placeholder="{...}" />
-            <marker date="1464339541000" expanded="true" signature="7036:7207" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7572:7711" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7612:7629" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7612:7630" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7612:7687" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7756:8103" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="7773:8101" placeholder="..." />
-            <marker date="1464339541000" expanded="true" signature="8171:8215" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#50#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account-statement.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1618,11 +1524,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <marker date="1464343856000" expanded="true" signature="54:123" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="174:4313" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="726:879" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="888:990" placeholder=" @return mixed|\Psr\Http\Message\ResponseInterface ..." />
+            <marker date="1464343856000" expanded="true" signature="1026:1178" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1187:1256" placeholder=" Return the xml as a string ..." />
+            <marker date="1464343856000" expanded="true" signature="1293:1455" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1464:1623" placeholder=" Checks if the data the user entered, matches the rules ..." />
+            <marker date="1464343856000" expanded="true" signature="1659:3275" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1717:3268" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="1769:3096" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1830:3082" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="1885:2113" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="1944:2082" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="2146:2453" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2272:2422" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="2484:3064" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2541:3032" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="2702:3007" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3170:3259" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3284:3403" placeholder=" Transforms the xml array to XML ..." />
+            <marker date="1464343856000" expanded="true" signature="3483:4104" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3534:4097" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3571:3733" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3741:4087" placeholder="..." />
+            <marker date="1464343856000" expanded="true" signature="3774:3937" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="3941:4074" placeholder="{...}" />
+            <marker date="1464343856000" expanded="true" signature="4113:4209" placeholder=" Set the (default) values for fields ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="615">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <marker date="1464343007000" expanded="true" signature="52:1100" placeholder="..." />
+            <marker date="1464343007000" expanded="true" signature="818:857" placeholder=" Request name tags ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="e#50#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+          <folding>
+            <element signature="e#47#64#0#PHP" expanded="true" />
+            <marker date="1464345508000" expanded="true" signature="889:914" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="889:971" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="3730:3857" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="3762:3833" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5115:6080" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5141:6060" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5166:5232" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5166:5233" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5166:5319" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5345:6033" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5435:5585" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5464:5499" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5464:5500" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5464:5557" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5616:5684" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5714:6006" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5747:5782" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5747:5893" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5747:5894" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="5747:5975" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="7449:7588" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="7489:7506" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="7489:7507" placeholder="..." />
+            <marker date="1464345508000" expanded="true" signature="7489:7564" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
