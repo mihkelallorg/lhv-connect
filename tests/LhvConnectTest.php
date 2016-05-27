@@ -26,12 +26,11 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
             'IBAN' => '',
             'url' => 'https://connect.lhv.eu',
             'cert' => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
-                        'responseHandlers' => [
-                'MerchantPaymentReport' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::merchantReportFunction",
-                'AccountStatement' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::accountStatementFunction",
-            ],
         ];
 
+        /**
+         * The response from the bank
+         */
         $dateTime = (new DateTime())->format(DateTime::ISO8601);
         $xmlResponse = "<HeartBeatResponse>
             <TimeStamp>" . $dateTime . "</TimeStamp>
@@ -39,9 +38,8 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
 
         /**
-         * Get the retrieved requests
+         * Prepare container for the requests to be made
          */
-
         $retrievedRequests = [];
         $history = Middleware::history($retrievedRequests);
 
@@ -61,14 +59,18 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $request = new HeartbeatGetRequest($client, $conf);
         $response = $request->sendRequest();
 
+        /**
+         * Only 1 request made
+         */
         $this->assertCount(1, $retrievedRequests);
 
         $req1 = $retrievedRequests[0]['request'];
 
+        /**
+         * Make sure the request was correct
+         */
         $this->assertEquals('GET', $req1->getMethod());
-
         $this->assertEquals('heartbeat', $req1->getRequestTarget());
-
         $this->assertEquals($xmlResponse, $response->getBody()->getContents());
     }
 
@@ -81,18 +83,13 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
             'IBAN' => '',
             'url' => 'https://connect.lhv.eu',
             'cert' => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
-                        'responseHandlers' => [
-                'MerchantPaymentReport' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::merchantReportFunction",
-                'AccountStatement' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::accountStatementFunction",
-            ],
         ];
 
         $retrievedRequests = [];
         $history = Middleware::history($retrievedRequests);
 
         /**
-         * Two responses to the two requests
-         * 1st is heartbeat request, second is to get the message
+         * 1 request, heartbeat doesn't use inbox system
          */
         $handler = HandlerStack::create(new MockHandler([
             new Response(503),
@@ -112,32 +109,27 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
     /**
      * @test
-     * @group testing
      */
     public function it_test_a_correct_account_statement_request()
     {
-
         $conf = [
             'IBAN' => '1234567890',
             'url' => 'https://connect.lhv.eu',
             'cert' => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
-                        'responseHandlers' => [
-                'MerchantPaymentReport' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::merchantReportFunction",
-                'AccountStatement' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::accountStatementFunction",
-            ],
         ];
 
         /**
-         * Get the retrieved requests
+         * Prepare container for the requests to be made
          */
-
         $retrievedRequests = [];
         $history = Middleware::history($retrievedRequests);
 
         $messageRID = str_random();
 
+        /**
+         * Prepare the response from the server
+         */
         $dateTime = (new DateTime())->format(DateTime::ISO8601);
-
         $xmlResponse = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?> 
             <Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.054.001.02\">
                 <BkToCstmrStmt>
@@ -145,6 +137,9 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
                 </BkToCstmrStmt>
             </Document>";
 
+        /**
+         * Prepare 4 responses for 4 requests.
+         */
         $handler = HandlerStack::create(new MockHandler([
             new Response(202), //MerchantPaymentRequest
             new Response(200, ['Message-Response-Id' => $messageRID, 'Content-Length' => 5], $xmlResponse), //InboxRequest
@@ -153,6 +148,9 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         ]));
         $handler->push($history);
 
+        /**
+         * Create LhvConnect with custom Client, which catches the requests
+         */
         $client = new Client([
             'handler' => $handler,
         ]);
@@ -161,11 +159,18 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $lhv->setClient($client);
 
-        $lhv->makeAccountStatementRequest();
+        $messages = $lhv->makeAccountStatementRequest();
 
+        /**
+         * Total of 4 request must have been made
+         * And 1 message should be retrieved from the inbox
+         */
         $this->assertCount(4, $retrievedRequests);
+        $this->assertCount(1, $messages);
 
-
+        /**
+         * Check all the request were correct
+         */
         $this->assertEquals('POST', $retrievedRequests[0]['request']->getMethod());
         $this->assertEquals('GET', $retrievedRequests[1]['request']->getMethod());
         $this->assertEquals('DELETE', $retrievedRequests[2]['request']->getMethod());
@@ -176,6 +181,9 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals('/messages/' . $messageRID, $retrievedRequests[2]['request']->getRequestTarget());
         $this->assertEquals('/messages/next', $retrievedRequests[3]['request']->getRequestTarget());
 
+        /**
+         * Response with the same structure will be sent from the server
+         */
         $expectedXml = "<?xml version=\"1.0\"?>
         <AcctRptgReq>
             <GrpHdr>
@@ -202,22 +210,17 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         </AcctRptgReq>";
         $expectedXmlObject = new \SimpleXMLElement($expectedXml);
 
+        /**
+         * As MsgId is generated in the Request class, we have no way to know it before the request is created
+         * So we take it from the response and add it to prepared xml and then assert that the xmls are equal
+         */
         $retrievedXml = $retrievedRequests[0]['request']->getBody()->getContents();
         $retrievedXmlObject = new \SimpleXMLElement($retrievedXml);
+        
         $msgId = $retrievedXmlObject->children()->GrpHdr->MsgId;
         $expectedXmlObject->children()->GrpHdr->addChild('MsgId', $msgId);
 
         $this->assertEquals($retrievedXmlObject->asXml(), $retrievedXmlObject->asXml());
-
-        $retrievedMessageText = file_get_contents("tests/account-statement.xml");
-
-        $this->assertEquals($xmlResponse, $retrievedMessageText);
-
-
-        if (file_exists("tests/account-statement.xml"))
-        {
-            unlink("tests/account-statement.xml");
-        }
     }
 
     /**
@@ -229,15 +232,7 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
             'IBAN' => '',
             'url' => 'https://connect.lhv.eu',
             'cert' => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
-                        'responseHandlers' => [
-                'MerchantPaymentReport' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::merchantReportFunction",
-                'AccountStatement' => "Mihkullorg\\LhvConnect\\Tests\\TestHelpers::accountStatementFunction",
-            ],
         ];
-
-        /**
-         * Get the retrieved requests
-         */
 
         $retrievedRequests = [];
         $history = Middleware::history($retrievedRequests);
@@ -268,9 +263,10 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $lhv->setClient($client);
 
-        $lhv->makeMerchantPaymentReportRequest();
+        $messages = $lhv->makeMerchantPaymentReportRequest();
 
         $this->assertCount(4, $retrievedRequests);
+        $this->assertCount(1, $messages);
 
         $this->assertEquals('POST', $retrievedRequests[0]['request']->getMethod());
         $this->assertEquals('GET', $retrievedRequests[1]['request']->getMethod());
@@ -292,15 +288,6 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $retrievedXml = $retrievedRequests[0]['request']->getBody()->getContents();
 
         $this->assertEquals(preg_replace('/\s+/', '', $expectedXml), preg_replace('/\s+/', '', $retrievedXml));
-
-        $retrievedMessageText = file_get_contents("tests/merchant-report.xml");
-
-        $this->assertEquals($xmlResponse, $retrievedMessageText);
-
-        if (file_exists("tests/merchant-report.xml"))
-        {
-            unlink("tests/merchant-report.xml");
-        }
     }
     
 }

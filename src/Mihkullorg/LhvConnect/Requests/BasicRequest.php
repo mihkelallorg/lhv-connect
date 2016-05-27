@@ -23,6 +23,11 @@ abstract class BasicRequest {
         $this->body = $body;
     }
 
+    /**
+     * Make the request to the server
+     * 
+     * @return mixed|\Psr\Http\Message\ResponseInterface
+     */
     public function sendRequest()
     {
         $response = $this->client->request($this->method, $this->url, [

@@ -8,10 +8,6 @@ return [
             'password' => "",
         ],
         'IBAN' => "",
-        'responseHandlers' => [
-            'MerchantPaymentReport' => "",
-            'AccountStatement' => "",
-        ],
     ],
     'name2' => [
         'url' => "https://connect.lhv.eu",
@@ -20,10 +16,6 @@ return [
             'password' => "",
         ],
         'IBAN' => "",
-        'responseHandlers' => [
-            'MerchantPaymentReport' => "",
-            'AccountStatement' => "",
-        ],
     ],
 
 ];

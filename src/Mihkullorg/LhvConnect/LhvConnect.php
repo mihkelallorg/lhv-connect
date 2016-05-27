@@ -3,19 +3,17 @@
 namespace Mihkullorg\LhvConnect;
 
 use GuzzleHttp\Client;
-use Illuminate\Support\Facades\Log;
 use Mihkullorg\LhvConnect\Requests\AccountStatementRequest;
 use Mihkullorg\LhvConnect\Requests\DeleteMessageInInbox;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
 use Mihkullorg\LhvConnect\Requests\MerchantPaymentReportRequest;
 use Mihkullorg\LhvConnect\Requests\RetrieveMessageFromInbox;
-use SimpleXMLElement;
 
 class LhvConnect {
 
     private $client;
     private $configuration;
-    
+
     public function __construct(array $configuration)
     {
         $this->configuration = $configuration;
@@ -24,6 +22,11 @@ class LhvConnect {
         ]);
     }
 
+    /**
+     * Test request. Tests the connection to the server
+     *
+     * @return mixed|\Psr\Http\Message\ResponseInterface
+     */
     public function makeHeartbeatGetRequest()
     {
         $request = new HeartbeatGetRequest($this->client, $this->configuration);
@@ -35,25 +38,47 @@ class LhvConnect {
     {
         //TODO
     }
-    
+
+    /**
+     * Make a Merchant Payment Report request.
+     * Response will be added to the "inbox"
+     *
+     * @param array $data
+     * @return array
+     */
     public function makeMerchantPaymentReportRequest(array $data = [])
     {
         $request = new MerchantPaymentReportRequest($this->client, $this->configuration, $data);
         $request->sendRequest();
 
-        $this->getAndResolveAllMessages();
+        return $this->getAllMessages();
     }
 
+    /**
+     * Make an Account Statement request.
+     * Response will be added to the "inbox"
+     *
+     * @param array $data
+     * @return array All the messages
+     */
     public function makeAccountStatementRequest(array $data = [])
     {
         $request = new AccountStatementRequest($this->client, $this->configuration, $data);
         $request->sendRequest();
 
-        $this->getAndResolveAllMessages();
+        return $this->getAllMessages();
     }
 
-    private function getAndResolveAllMessages()
+    /**
+     * Retrieve all the messages from the inbox
+     * Deletes all the retrieved messages from the inbox
+     *
+     * @return array
+     */
+    public function getAllMessages()
     {
+        $messages = [];
+
         while(true)
         {
             $message = $this->makeRetrieveMessageFromInboxRequest();
@@ -62,10 +87,15 @@ class LhvConnect {
             {
                 break;
             }
-            $this->handleMessage($message);
+
             $this->makeDeleteMessageInInboxRequest($message->getHeader('Message-Response-Id')[0]);
+
+            array_push($messages, $message);
         }
+
+        return $messages;
     }
+
 
     private function makeRetrieveMessageFromInboxRequest()
     {
@@ -74,31 +104,16 @@ class LhvConnect {
         return $request->sendRequest();
     }
 
-    private function handleMessage($message)
+    public function setClient(Client $client)
     {
-        $xml = new SimpleXMLElement($message->getBody()->getContents());
-        $functions = $this->configuration['responseHandlers'];
-
-        if (isset($xml->BkToCstmrDbtCdtNtfctn))
-        {
-            call_user_func($functions['MerchantPaymentReport'], $message);
-        }else if (isset($xml->BkToCstmrStmt))
-        {
-            call_user_func($functions['AccountStatement'], $message);
-        }else{
-            Log::warning("Weird XML response: \n" . $xml->asXML());
-        }
+        $this->client = $client;    
     }
+
 
     private function makeDeleteMessageInInboxRequest($id)
     {
         $request = new DeleteMessageInInbox($this->client, $this->configuration, null, [], $id);
 
         return $request->sendRequest();
-    }
-
-    public function setClient(Client $client)
-    {
-        $this->client = $client;    
     }
 }
