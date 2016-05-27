@@ -51,7 +51,7 @@ abstract class FullRequest extends BasicRequest {
      */
     protected function createXML()
     {
-        $xml = new SimpleXMLElement("<$this->xmlTag></$this->xmlTag>");
+        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?><$this->xmlTag></$this->xmlTag>");
         $this->array_to_xml($this->xml, $xml);
 
         return $xml->asXML();

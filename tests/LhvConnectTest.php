@@ -174,7 +174,7 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         /**
          * Response with the same structure will be sent from the server
          */
-        $expectedXml = "<?xml version=\"1.0\"?>
+        $expectedXml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
         <Document xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.060.001.03\">
             <AcctRptgReq>
                 <GrpHdr>
@@ -261,7 +261,7 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals('merchant-report', $retrievedRequests[0]['request']->getRequestTarget());
 
 
-        $expectedXml = "<?xml version=\"1.0\"?>
+        $expectedXml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
         <MerchantReportRequest><Type>CAMT_SETTLEMENT</Type><PeriodStart>" .
             (new DateTime())->sub(new DateInterval('P1M'))->format('Y-m-d')
             . "</PeriodStart><PeriodEnd>" .
