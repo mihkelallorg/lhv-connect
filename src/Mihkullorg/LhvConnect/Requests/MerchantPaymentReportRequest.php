@@ -15,7 +15,7 @@ class MerchantPaymentReportRequest extends FullRequest {
     protected $xmlFormat = "";
 
     protected $rules = [
-        'TYPE' => 'in:CAMT_SETTLEMENT,CAMT_TRANSACTION',
+        'MERCHANT_PAYMENT_TYPE' => 'in:CAMT_SETTLEMENT,CAMT_TRANSACTION',
         'PERIOD_START' => 'date',
         'PERIOD_END' => 'date',
     ];
@@ -23,11 +23,11 @@ class MerchantPaymentReportRequest extends FullRequest {
     protected $fields = [
         'PERIOD_START' => "",
         'PERIOD_END' => "",
-        'TYPE' => "",
+        'MERCHANT_PAYMENT_TYPE' => "",
     ];
 
     protected $xml = [
-        'TYPE' => "",
+        'MERCHANT_PAYMENT_TYPE' => "",
         'PERIOD_START' => "",
         'PERIOD_END' => "",
     ];
@@ -38,7 +38,7 @@ class MerchantPaymentReportRequest extends FullRequest {
      */
     protected function prepareFields()
     {
-        $this->fields['TYPE'] = "CAMT_SETTLEMENT";
+        $this->fields['MERCHANT_PAYMENT_TYPE'] = "CAMT_SETTLEMENT";
         $dateTime = new DateTime(); // It's now
         $this->fields['PERIOD_START'] = $dateTime->sub(new DateInterval('P1M'))->format('Y-m-d');  //Last month
         $this->fields['PERIOD_END'] = (new DateTime())->format('Y-m-d');

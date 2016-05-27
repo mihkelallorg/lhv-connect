@@ -95,7 +95,7 @@ abstract class FullRequest extends BasicRequest {
                         break;
                 }
             }
-            if (isset($this->data[$field]))
+            if (isset($this->data[$field]) and $this->data[$field] != "")
             {
                 $this->fields[$field] = $this->data[$field];
             }

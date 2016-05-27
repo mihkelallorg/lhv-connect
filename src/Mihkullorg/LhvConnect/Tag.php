@@ -24,6 +24,7 @@ class Tag {
         REQUESTED_MESSAGE_NAME_IDENTIFICATION = "ReqdMsgNmId",
         TO_DATE = "ToDt",
         TO_TIME = "ToTm",
+        MERCHANT_PAYMENT_TYPE = "Type",
         TYPE = "Tp",
 
         /**
