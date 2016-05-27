@@ -9,6 +9,7 @@ class Tag {
         ACCOUNT_IDENTIFICATION = "Id",
         ACCOUNT_OWNER = "AcctOwnr",
         CREATION_DATETIME = "CrdDtTm",
+        DOCUMENT = "Document",
         FROM_DATE = "FrDt",
         FROM_TO_DATE = "FrToDt",
         FROM_TO_TIME = "FrToTm",

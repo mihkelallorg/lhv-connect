@@ -50,8 +50,6 @@ class LhvConnect {
     {
         $request = new MerchantPaymentReportRequest($this->client, $this->configuration, $data);
         $request->sendRequest();
-
-        return $this->getAllMessages();
     }
 
     /**
@@ -65,8 +63,6 @@ class LhvConnect {
     {
         $request = new AccountStatementRequest($this->client, $this->configuration, $data);
         $request->sendRequest();
-
-        return $this->getAllMessages();
     }
 
     /**

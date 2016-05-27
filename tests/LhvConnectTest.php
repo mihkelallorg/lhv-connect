@@ -159,28 +159,22 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $lhv->setClient($client);
 
-        $messages = $lhv->makeAccountStatementRequest();
+        $lhv->makeAccountStatementRequest();
 
         /**
          * Total of 4 request must have been made
          * And 1 message should be retrieved from the inbox
          */
-        $this->assertCount(4, $retrievedRequests);
-        $this->assertCount(1, $messages);
+        $this->assertCount(1, $retrievedRequests);
 
         /**
          * Check all the request were correct
          */
         $this->assertEquals('POST', $retrievedRequests[0]['request']->getMethod());
-        $this->assertEquals('GET', $retrievedRequests[1]['request']->getMethod());
-        $this->assertEquals('DELETE', $retrievedRequests[2]['request']->getMethod());
-        $this->assertEquals('GET', $retrievedRequests[3]['request']->getMethod());
 
         $this->assertEquals('account-statement', $retrievedRequests[0]['request']->getRequestTarget());
-        $this->assertEquals('/messages/next', $retrievedRequests[1]['request']->getRequestTarget());
-        $this->assertEquals('/messages/' . $messageRID, $retrievedRequests[2]['request']->getRequestTarget());
-        $this->assertEquals('/messages/next', $retrievedRequests[3]['request']->getRequestTarget());
 
+        file_put_contents("account-statement.xml", (string) $retrievedRequests[0]['request']->getBody());
         /**
          * Response with the same structure will be sent from the server
          */
@@ -289,5 +283,5 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals(preg_replace('/\s+/', '', $expectedXml), preg_replace('/\s+/', '', $retrievedXml));
     }
-    
+
 }

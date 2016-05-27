@@ -11,7 +11,7 @@ class AccountStatementRequest extends FullRequest {
     protected $url = "account-statement";
     protected $method = "POST";
 
-    protected $xmlTag = Tag::ACCOUNT_STATEMENT_REQUEST;
+    protected $xmlTag = Tag::DOCUMENT;
     protected $xmlFormat = "camt.060.001.03";
 
     protected $rules = [
@@ -31,26 +31,28 @@ class AccountStatementRequest extends FullRequest {
     ];
 
     protected $xml = [
-        'GROUP_HEADER' => [
-            'MESSAGE_IDENTIFICATION' => "",
-            'CREATION_DATETIME' => "",
-        ],
-        'REPORTING_REQUEST' => [
-            'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
-            'ACCOUNT' => [
-                'ACCOUNT_IDENTIFICATION' => [
-                    'IBAN' => "",
-                ],
+        'ACCOUNT_STATEMENT_REQUEST' => [
+            'GROUP_HEADER' => [
+                'MESSAGE_IDENTIFICATION' => "",
+                'CREATION_DATETIME' => "",
             ],
-            'ACCOUNT_OWNER' => [
-                'PARTY' => "",
-            ],
-            'REPORTING_PERIOD' => [
-                'FROM_TO_DATE' => [
-                    'FROM_DATE' => "",
-                    'TO_DATE' => "",
+            'REPORTING_REQUEST' => [
+                'REQUESTED_MESSAGE_NAME_IDENTIFICATION' => "",
+                'ACCOUNT' => [
+                    'ACCOUNT_IDENTIFICATION' => [
+                        'IBAN' => "",
+                    ],
                 ],
-                'TYPE' => "",
+                'ACCOUNT_OWNER' => [
+                    'PARTY' => "",
+                ],
+                'REPORTING_PERIOD' => [
+                    'FROM_TO_DATE' => [
+                        'FROM_DATE' => "",
+                        'TO_DATE' => "",
+                    ],
+                    'TYPE' => "",
+                ],
             ],
         ],
     ];
