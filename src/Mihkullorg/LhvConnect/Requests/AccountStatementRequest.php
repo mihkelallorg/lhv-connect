@@ -13,7 +13,7 @@ class AccountStatementRequest extends FullRequest {
     protected $method = "POST";
 
     protected $xmlTag = Tag::DOCUMENT;
-    protected $xmlFormat = "camt.060.001.03";
+    protected $xmlFormat = "camt.053.001.02";
 
     protected $rules = [
         'FROM_DATE' => 'date',
