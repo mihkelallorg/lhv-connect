@@ -84,7 +84,7 @@ class LhvConnect {
                 break;
             }
 
-            $this->makeDeleteMessageInInboxRequest($message->getHeader('Message-Response-Id')[0]);
+            $this->makeDeleteMessageInInboxRequest($message);
 
             array_push($messages, $message);
         }
@@ -93,7 +93,7 @@ class LhvConnect {
     }
 
 
-    private function makeRetrieveMessageFromInboxRequest()
+    public function makeRetrieveMessageFromInboxRequest()
     {
         $request = new RetrieveMessageFromInbox($this->client, $this->configuration);
 
@@ -106,8 +106,9 @@ class LhvConnect {
     }
 
 
-    private function makeDeleteMessageInInboxRequest($id)
+    public function makeDeleteMessageInInboxRequest($message)
     {
+        $id = $message->getHeader('Message-Response-Id')[0];
         $request = new DeleteMessageInInbox($this->client, $this->configuration, null, [], $id);
 
         return $request->sendRequest();
