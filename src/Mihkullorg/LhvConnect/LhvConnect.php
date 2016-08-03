@@ -7,6 +7,7 @@ use Mihkullorg\LhvConnect\Requests\AccountStatementRequest;
 use Mihkullorg\LhvConnect\Requests\DeleteMessageInInbox;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
 use Mihkullorg\LhvConnect\Requests\MerchantPaymentReportRequest;
+use Mihkullorg\LhvConnect\Requests\PaymentInitiationRequest;
 use Mihkullorg\LhvConnect\Requests\RetrieveMessageFromInbox;
 
 class LhvConnect {
@@ -113,4 +114,10 @@ class LhvConnect {
 
         return $request->sendRequest();
     }
+
+    public function makePaymentInitiationRequest($payments)
+    {
+        $request = new PaymentInitiationRequest($this->client, $this->configuration, $payments);
+    }
+
 }

@@ -13,14 +13,16 @@ abstract class BasicRequest {
     protected $configuration;
     protected $body;
     protected $headers;
+    protected $files;
 
 
-    public function __construct(Client $client, $configuration, $body = null, $headers = [])
+    public function __construct(Client $client, $configuration, $body = null, $headers = [], $files = [])
     {
         $this->client = $client;
         $this->configuration = $configuration;
         $this->headers = $headers;
         $this->body = $body;
+        $this->files = $files;
     }
 
     /**
@@ -30,15 +32,37 @@ abstract class BasicRequest {
      */
     public function sendRequest()
     {
-        $response = $this->client->request($this->method, $this->url, [
+        $options = $this->prepareRequestOptions();
+
+        $response = $this->client->request($this->method, $this->url, $options);
+        
+        return $response;
+    }
+
+    private function prepareRequestOptions()
+    {
+        $options = [
             RequestOptions::CERT => [
                 $this->configuration['cert']['path'],
                 $this->configuration['cert']['password'],
             ],
             RequestOptions::BODY => $this->body,
             RequestOptions::HEADERS => $this->headers,
-        ]);
-        
-        return $response;
+        ];
+
+        if ( ! empty($this->files))
+        {
+            $options[RequestOptions::MULTIPART] = [];
+            foreach($this->files as $file)
+            {
+                $options[RequestOptions::MULTIPART][] = [
+                    'name'      => "file",
+                    'filename'  => "request.bdoc",
+                    'contents'  => $file,
+                ];
+            }
+        }
+
+        return $options;
     }
 }

@@ -6,6 +6,9 @@ use DateInterval;
 use DateTime;
 use Mihkullorg\LhvConnect\Tag;
 
+/**
+ * The xml generating is updated. This class isn't
+
 class MerchantPaymentReportRequest extends FullRequest {
 
     protected $url = "merchant-report";
@@ -32,10 +35,6 @@ class MerchantPaymentReportRequest extends FullRequest {
         'PERIOD_END' => "",
     ];
 
-    /**
-     * Set the (default) values for fields
-     * Some might be overwritten by input data
-     */
     protected function prepareFields()
     {
         $this->fields['MERCHANT_PAYMENT_TYPE'] = "CAMT_SETTLEMENT";
@@ -49,3 +48,4 @@ class MerchantPaymentReportRequest extends FullRequest {
         // Nothing to do here
     }
 }
+ */

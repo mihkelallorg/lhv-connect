@@ -19,12 +19,9 @@ abstract class FullRequest extends BasicRequest {
     
     protected $rules; //The rules for user input ($data)
 
-    protected $xml; //Xml structure as array. Will be transformed into xml with values
-
-
-    public function __construct(Client $client, $configuration, array $data, $body = null, $headers = [])
+    public function __construct(Client $client, $configuration, array $data, $body = null, $headers = [], $files = [])
     {
-        parent::__construct($client, $configuration, $body, $headers);
+        parent::__construct($client, $configuration, $body, $headers, $files);
 
         $this->data = $data;
         $this->msgId = str_random(30);
@@ -49,13 +46,7 @@ abstract class FullRequest extends BasicRequest {
      *
      * @return string
      */
-    protected function createXML()
-    {
-        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?><$this->xmlTag></$this->xmlTag>");
-        $this->array_to_xml($this->xml, $xml);
-
-        return $xml->asXML();
-    }
+    protected abstract function createXML();
 
     /**
      * Checks if the data the user entered, matches the rules
@@ -116,13 +107,7 @@ abstract class FullRequest extends BasicRequest {
                 $subnode = $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"));
                 self::array_to_xml($value, $subnode);
             } else {
-                if($value == "")
-                {
-                    $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), htmlspecialchars($this->fields[$key]));
-                }else 
-                {
-                    $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), $value);
-                }
+                $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), $value);
             }
         }
     }
@@ -133,5 +118,4 @@ abstract class FullRequest extends BasicRequest {
      */
     protected abstract function prepareFields();
 
-    protected abstract function prepareXmlArray();
 }

@@ -7,8 +7,11 @@ use DateTime;
 use Mihkullorg\LhvConnect\Tag;
 use SimpleXMLElement;
 
+/**
+ * Updated the XML generating system. This isn't updated.
+
 class AccountStatementRequest extends FullRequest {
-    
+
     protected $url = "account-statement";
     protected $method = "POST";
 
@@ -89,4 +92,6 @@ class AccountStatementRequest extends FullRequest {
         }
         parent::array_to_xml($data, $xml_data);
     }
+
 }
+ */
