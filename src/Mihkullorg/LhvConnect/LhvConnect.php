@@ -9,11 +9,14 @@ use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
 use Mihkullorg\LhvConnect\Requests\MerchantPaymentReportRequest;
 use Mihkullorg\LhvConnect\Requests\PaymentInitiationRequest;
 use Mihkullorg\LhvConnect\Requests\RetrieveMessageFromInbox;
+use Psr\Http\Message\ResponseInterface;
 
 class LhvConnect {
 
     private $client;
     private $configuration;
+
+    private $request;
 
     public function __construct(array $configuration)
     {
@@ -21,6 +24,7 @@ class LhvConnect {
         $this->client = new Client([
             'base_uri' => $this->configuration['url'],
         ]);
+
     }
 
     /**
@@ -31,39 +35,13 @@ class LhvConnect {
     public function makeHeartbeatGetRequest()
     {
         $request = new HeartbeatGetRequest($this->client, $this->configuration);
-        
+
         return $request->sendRequest();
     }
 
     public function makeHeartbeatPostRequest()
     {
         //TODO
-    }
-
-    /**
-     * Make a Merchant Payment Report request.
-     * Response will be added to the "inbox"
-     *
-     * @param array $data
-     * @return array
-     */
-    public function makeMerchantPaymentReportRequest(array $data = [])
-    {
-        $request = new MerchantPaymentReportRequest($this->client, $this->configuration, $data);
-        $request->sendRequest();
-    }
-
-    /**
-     * Make an Account Statement request.
-     * Response will be added to the "inbox"
-     *
-     * @param array $data
-     * @return array All the messages
-     */
-    public function makeAccountStatementRequest(array $data = [])
-    {
-        $request = new AccountStatementRequest($this->client, $this->configuration, $data);
-        $request->sendRequest();
     }
 
     /**
@@ -93,7 +71,9 @@ class LhvConnect {
         return $messages;
     }
 
-
+    /**
+     * @return ResponseInterface
+     */
     public function makeRetrieveMessageFromInboxRequest()
     {
         $request = new RetrieveMessageFromInbox($this->client, $this->configuration);
@@ -101,13 +81,19 @@ class LhvConnect {
         return $request->sendRequest();
     }
 
+    /**
+     * @param Client $client
+     */
     public function setClient(Client $client)
     {
-        $this->client = $client;    
+        $this->client = $client;
     }
 
-
-    public function makeDeleteMessageInInboxRequest($message)
+    /**
+     * @param ResponseInterface $message
+     * @return ResponseInterface
+     */
+    public function makeDeleteMessageInInboxRequest(ResponseInterface $message)
     {
         $id = $message->getHeader('Message-Response-Id')[0];
         $request = new DeleteMessageInInbox($this->client, $this->configuration, null, [], $id);
@@ -115,9 +101,27 @@ class LhvConnect {
         return $request->sendRequest();
     }
 
-    public function makePaymentInitiationRequest($payments)
+    /**
+     * @param $payments
+     * @return string
+     */
+    public function getPaymentInititationXML($payments)
     {
         $request = new PaymentInitiationRequest($this->client, $this->configuration, $payments);
+
+        return $request->getXML();
+    }
+
+    /**
+     * @param $ddoc
+     * @return ResponseInterface
+     */
+    public function makePaymentInitiationRequest($ddoc)
+    {
+        $body = file_get_contents($ddoc);
+        $request = new PaymentInitiationRequest($this->client, $this->configuration, [], $body);
+
+        return $request->sendRequest();
     }
 
 }

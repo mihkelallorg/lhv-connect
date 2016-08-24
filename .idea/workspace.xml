@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/config.php" afterPath="$PROJECT_DIR$/src/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/LhvConnectTest.php" afterPath="$PROJECT_DIR$/tests/LhvConnectTest.php" />
     </list>
     <ignored path="lhv-connect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,38 +33,18 @@
     <favorites_list name="lhv-connect" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="PaymentInitiationRequest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="753">
-                  <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#50#80#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="FullRequest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="933">
-                  <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="LhvConnect.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,19 +88,21 @@
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/DeleteMessageInInbox.php" />
         <option value="$PROJECT_DIR$/tests/test_cert.crt" />
         <option value="$PROJECT_DIR$/tests/TestHelpers.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/config/config.php" />
-        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
         <option value="$PROJECT_DIR$/merchant-report.xml" />
         <option value="$PROJECT_DIR$/account-statement.xml" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php" />
-        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XML.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php" />
+        <option value="$PROJECT_DIR$/src/config/config.php" />
+        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
+        <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
       </list>
     </option>
   </component>
@@ -131,9 +117,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -182,6 +167,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,8 +251,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,9 +259,9 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Tags&#9;null&#9;null" />
-    <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -369,12 +354,25 @@
       <workItem from="1470047314696" duration="486000" />
       <workItem from="1470116005219" duration="2025000" />
       <workItem from="1470145702188" duration="423000" />
-      <workItem from="1470203633892" duration="10324000" />
+      <workItem from="1470203633892" duration="10537000" />
+      <workItem from="1470306361996" duration="5701000" />
+      <workItem from="1470376899919" duration="1144000" />
+      <workItem from="1470380817771" duration="98000" />
+      <workItem from="1470380987154" duration="312000" />
+      <workItem from="1470382090196" duration="1764000" />
+      <workItem from="1470395904030" duration="464000" />
+      <workItem from="1470440523538" duration="176000" />
+      <workItem from="1470473992000" duration="336000" />
+      <workItem from="1471328969774" duration="7353000" />
+      <workItem from="1471411226612" duration="6199000" />
+      <workItem from="1471497986836" duration="8127000" />
+      <workItem from="1471843971126" duration="2840000" />
+      <workItem from="1472038298939" duration="2382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141244000" />
+    <option name="totallyTimeSpent" value="178353000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,10 +384,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,89 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tags/Tag.php" />
-    <entry file="file://$PROJECT_DIR$/src/XML.php" />
-    <entry file="file://$PROJECT_DIR$/src/RequestType.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Cookie/SessionCookieJar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/config.php" />
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/functions.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/illuminate/support/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="729" column="13" selection-start-line="729" selection-start-column="13" selection-end-line="729" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/ResponseCode.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/MessageTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/psr7/src/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="253" column="6" selection-start-line="253" selection-start-column="6" selection-end-line="253" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php" />
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <marker date="1464091812000" expanded="true" signature="69:556" ph="..." />
-            <marker date="1464091812000" expanded="true" signature="413:545" ph="..." />
-            <marker date="1464091812000" expanded="true" signature="463:527" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/xml/AccountStatementResponse.xml" />
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/ForbiddenException.php" />
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Exceptions/RequestDataInvalidException.php" />
@@ -551,35 +466,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="272" column="111" selection-start-line="272" selection-start-column="111" selection-end-line="272" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/merchant-report.xml" />
     <entry file="file://$PROJECT_DIR$/account-statement.xml" />
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="555">
@@ -588,18 +477,16 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/RetrieveMessageFromInbox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php">
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -610,71 +497,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/src/File.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/src/Soap/Client.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/src/Session.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/src/Signature.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/src/Tracker.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/tests/ApiTest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/tests/bootstrap.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/tests/ContainerTest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/tests/EncoderTest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/tests/SignatureTest.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/README.md" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/UPGRADE.md" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/phpunit.xml.dist" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/CONTRIBUTING.md" />
+    <entry file="file://$PROJECT_DIR$/vendor/kgilden/php-digidoc/CHANGELOG.md" />
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <marker date="1470207148000" expanded="true" signature="52:2498" ph="..." />
-            <marker date="1470207148000" expanded="true" signature="2159:2198" ph=" Request name tags ..." />
-          </folding>
+        <state relative-caret-position="603">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvier.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XML.php" />
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LaravelLhvConnectServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
           <folding>
-            <marker date="1463725776000" expanded="true" signature="146:931" ph="..." />
-            <marker date="1463725776000" expanded="true" signature="155:242" ph=" Indicates if loading of the provider is deferred. ..." />
-            <marker date="1463725776000" expanded="true" signature="283:357" ph=" Bootstrap the application events. ..." />
-            <marker date="1463725776000" expanded="true" signature="386:430" ph="{...}" />
-            <marker date="1463725776000" expanded="true" signature="439:510" ph=" Register the service provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="543:566" ph="{...}" />
-            <marker date="1463725776000" expanded="true" signature="575:659" ph=" Get the services provided by the provider. ..." />
-            <marker date="1463725776000" expanded="true" signature="692:723" ph="{...}" />
-            <marker date="1463725776000" expanded="true" signature="760:930" ph="{...}" />
-            <marker date="1463725776000" expanded="true" signature="853:922" ph="..." />
-            <marker date="1463725776000" expanded="true" signature="854:921" ph="..." />
+            <marker date="1471617398000" expanded="false" signature="51:364" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="423:3332" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="433:452" ph=" @test ..." />
+            <marker date="1471617398000" expanded="true" signature="517:2111" ph="{...}" />
+            <marker date="1471617398000" expanded="true" signature="541:712" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="727:775" ph=" The response from the bank ..." />
+            <marker date="1471617398000" expanded="true" signature="939:1021" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="1038:1105" ph=" Prepare container for the requests to be made ..." />
+            <marker date="1471617398000" expanded="true" signature="1213:1331" ph=" Heartbeat request returns the timestamp. ..." />
+            <marker date="1471617398000" expanded="true" signature="1374:1451" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="1391:1449" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="1519:1563" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="1685:1726" ph=" Only 1 request made ..." />
+            <marker date="1471617398000" expanded="true" signature="1843:1898" ph=" Make sure the request was correct ..." />
+            <marker date="1471617398000" expanded="true" signature="2120:2139" ph=" @test ..." />
+            <marker date="1471617398000" expanded="true" signature="2207:2961" ph="{...}" />
+            <marker date="1471617398000" expanded="true" signature="2231:2402" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="2511:2578" ph=" 1 request, heartbeat doesn't use inbox system ..." />
+            <marker date="1471617398000" expanded="true" signature="2621:2680" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="2638:2678" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="2748:2792" ph="..." />
+            <marker date="1471617398000" expanded="true" signature="2970:2989" ph=" @test ..." />
+            <marker date="1471617398000" expanded="true" signature="3058:3330" ph="{...}" />
+            <marker date="1471617398000" expanded="true" signature="3082:3319" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/RequestOptions.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="132">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
           <folding>
-            <marker date="1458590529000" expanded="true" signature="32:245" ph=" This class contains a list of built-in Guzzle request options. ..." />
-            <marker date="1458590529000" expanded="true" signature="274:9651" ph="{...}" />
-            <marker date="1458590529000" expanded="true" signature="284:1451" ph=" allow_redirects: (bool|array) Controls redirect behavior. Pass false ..." />
-            <marker date="1458590529000" expanded="true" signature="1509:1841" ph=" auth: (array) Pass an array of HTTP authentication parameters to use ..." />
-            <marker date="1458590529000" expanded="true" signature="1877:1971" ph=" body: (string|null|callable|iterator|object) Body to send in the ..." />
-            <marker date="1458590529000" expanded="true" signature="2007:2353" ph=" cert: (string|array) Set to a string to specify the path to a file ..." />
-            <marker date="1458590529000" expanded="true" signature="2389:2761" ph=" cookies: (bool|GuzzleHttp\Cookie\CookieJarInterface, default=false) ..." />
-            <marker date="1458590529000" expanded="true" signature="2803:3001" ph=" connect_timeout: (float, default=0) Float describing the number of ..." />
-            <marker date="1458590529000" expanded="true" signature="3059:3231" ph=" debug: (bool|resource) Set to true or set to a PHP stream returned by ..." />
-            <marker date="1458590529000" expanded="true" signature="3269:3432" ph=" decode_content: (bool, default=true) Specify whether or not ..." />
-            <marker date="1458590529000" expanded="true" signature="3488:3574" ph=" delay: (int) The amount of time to delay before sending in milliseconds. ..." />
-            <marker date="1458590529000" expanded="true" signature="3612:4398" ph=" expect: (bool|integer) Controls the behavior of the ..." />
-            <marker date="1458590529000" expanded="true" signature="4438:4705" ph=" form_params: (array) Associative array of form field names to values ..." />
-            <marker date="1458590529000" expanded="true" signature="4755:4876" ph=" headers: (array) Associative array of HTTP headers. Each value MUST be ..." />
-            <marker date="1458590529000" expanded="true" signature="4918:5208" ph=" http_errors: (bool, default=true) Set to false to disable exceptions ..." />
-            <marker date="1458590529000" expanded="true" signature="5258:5484" ph=" json: (mixed) Adds JSON data to a request. The provided value is JSON ..." />
-            <marker date="1458590529000" expanded="true" signature="5520:6002" ph=" multipart: (array) Array of associative arrays, each containing a ..." />
-            <marker date="1458590529000" expanded="true" signature="6048:6226" ph=" on_headers: (callable) A callable that is invoked when the HTTP headers ..." />
-            <marker date="1458590529000" expanded="true" signature="6274:6782" ph=" on_stats: (callable) allows you to get access to transfer statistics of ..." />
-            <marker date="1458590529000" expanded="true" signature="6826:7180" ph=" progress: (callable) Defines a function to invoke when transfer ..." />
-            <marker date="1458590529000" expanded="true" signature="7224:7443" ph=" proxy: (string|array) Pass a string to specify an HTTP proxy, or an ..." />
-            <marker date="1458590529000" expanded="true" signature="7481:7756" ph=" query: (array|string) Associative array of query string values to add ..." />
-            <marker date="1458590529000" expanded="true" signature="7794:8002" ph=" sink: (resource|string|StreamInterface) Where the data of the ..." />
-            <marker date="1458590529000" expanded="true" signature="8038:8298" ph=" synchronous: (bool) Set to true to inform HTTP handlers that you intend ..." />
-            <marker date="1458590529000" expanded="true" signature="8348:8664" ph=" ssl_key: (array|string) Specify the path to a file containing a private ..." />
-            <marker date="1458590529000" expanded="true" signature="8706:8816" ph=" stream: Set to true to attempt to stream a response rather than ..." />
-            <marker date="1458590529000" expanded="true" signature="8856:9294" ph=" verify: (bool|string, default=true) Describes the SSL certificate ..." />
-            <marker date="1458590529000" expanded="true" signature="9334:9489" ph=" timeout: (float, default=0) Float describing the timeout of the ..." />
-            <marker date="1458590529000" expanded="true" signature="9531:9616" ph=" version: (float) Specifies the HTTP protocol version to attempt to use. ..." />
+            <marker date="1472038574000" expanded="false" signature="45:76" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="98:4334" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="107:226" ph=" Transforms the xml array to XML ..." />
+            <marker date="1472038574000" expanded="true" signature="306:686" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="357:679" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="394:556" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="564:669" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="695:784" ph=" @param array $data ..." />
+            <marker date="1472038574000" expanded="true" signature="869:1512" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="991:1048" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="1334:1474" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="1609:3894" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="1632:3886" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="1671:3875" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2117:2197" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2260:2483" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2319:2464" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2546:2707" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2611:2688" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2845:3860" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="2895:2975" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3029:3178" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3077:3155" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3214:3299" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3395:3480" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3531:3701" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3597:3678" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3753:3841" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="3982:4332" ph="{...}" />
+            <marker date="1472038574000" expanded="true" signature="4005:4324" ph="..." />
+            <marker date="1472038574000" expanded="true" signature="4037:4313" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/RetrieveMessageFromInbox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <marker date="1464249618000" expanded="true" signature="103:184" ph="..." />
           </folding>
         </state>
       </provider>
@@ -690,90 +644,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <marker date="1470209486000" expanded="false" signature="54:103" ph="..." />
-            <marker date="1470209486000" expanded="true" signature="134:1708" ph="..." />
-            <marker date="1470209486000" expanded="true" signature="406:593" ph="{...}" />
-            <marker date="1470209486000" expanded="true" signature="602:711" ph=" Make the request to the server ..." />
-            <marker date="1470209486000" expanded="true" signature="747:927" ph="{...}" />
-            <marker date="1470209486000" expanded="true" signature="973:1707" ph="{...}" />
-            <marker date="1470209486000" expanded="true" signature="1000:1278" ph="..." />
-            <marker date="1470209486000" expanded="true" signature="1038:1163" ph="..." />
-            <marker date="1470209486000" expanded="true" signature="1317:1675" ph="{...}" />
-            <marker date="1470209486000" expanded="true" signature="1424:1665" ph="{...}" />
-            <marker date="1470209486000" expanded="true" signature="1496:1649" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding>
-            <marker date="1470210938000" expanded="false" signature="45:423" ph="..." />
-            <marker date="1470210938000" expanded="true" signature="443:3244" ph="..." />
-            <marker date="1470210938000" expanded="true" signature="548:711" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="638:702" ph="..." />
-            <marker date="1470210938000" expanded="true" signature="720:846" ph=" Test request. Tests the connection to the server ..." />
-            <marker date="1470210938000" expanded="true" signature="894:1036" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="1084:1111" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="1120:1272" ph=" Make a Merchant Payment Report request. ..." />
-            <marker date="1470210938000" expanded="true" signature="1345:1487" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="1496:1660" ph=" Make an Account Statement request. ..." />
-            <marker date="1470210938000" expanded="true" signature="1728:1865" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="1874:2013" ph=" Retrieve all the messages from the inbox ..." />
-            <marker date="1470210938000" expanded="true" signature="2052:2502" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="2103:2469" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="2299:2350" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="2562:2701" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="2748:2797" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="2861:3072" ph="{...}" />
-            <marker date="1470210938000" expanded="true" signature="3133:3242" ph="{...}" />
+            <marker date="1464249618000" expanded="true" signature="98:166" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/AccountStatementRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <marker date="1470228867000" expanded="false" signature="54:134" ph="..." />
-            <marker date="1470228867000" expanded="true" signature="139:2764" ph=" Updated the XML generating system. This isn't updated. ..." />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/MerchantPaymentReportRequest.php">
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+        <state relative-caret-position="405">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
           <folding>
-            <marker date="1470228867000" expanded="false" signature="54:112" ph="..." />
+            <marker date="1472039020000" expanded="false" signature="54:103" ph="..." />
+            <marker date="1472039020000" expanded="true" signature="134:1285" ph="..." />
+            <marker date="1472039020000" expanded="true" signature="370:580" ph="{...}" />
+            <marker date="1472039020000" expanded="true" signature="589:691" ph=" Make the request to the server ..." />
+            <marker date="1472039020000" expanded="true" signature="727:899" ph="{...}" />
+            <marker date="1472039020000" expanded="true" signature="945:1284" ph="{...}" />
+            <marker date="1472039020000" expanded="true" signature="972:1250" ph="..." />
+            <marker date="1472039020000" expanded="true" signature="1010:1135" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <marker date="1472038832000" expanded="false" signature="54:188" ph="..." />
+            <marker date="1472038832000" expanded="true" signature="239:785" ph="..." />
+            <marker date="1472038832000" expanded="true" signature="551:664" ph="{...}" />
+            <marker date="1472038832000" expanded="true" signature="673:742" ph=" Return the xml as a string ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <element signature="e#50#80#0#PHP" expanded="true" />
+            <marker date="1471335877000" expanded="true" signature="143:428" ph="..." />
+            <marker date="1471335877000" expanded="true" signature="228:297" ph=" Return the xml as a string ..." />
+            <marker date="1471335877000" expanded="true" signature="328:426" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

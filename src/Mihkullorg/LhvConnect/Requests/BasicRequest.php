@@ -13,29 +13,27 @@ abstract class BasicRequest {
     protected $configuration;
     protected $body;
     protected $headers;
-    protected $files;
 
-
-    public function __construct(Client $client, $configuration, $body = null, $headers = [], $files = [])
+    public function __construct(Client $client, $configuration, $body = null, $headers = [])
     {
+        date_default_timezone_set('Europe/Istanbul');
         $this->client = $client;
         $this->configuration = $configuration;
         $this->headers = $headers;
         $this->body = $body;
-        $this->files = $files;
     }
 
     /**
      * Make the request to the server
-     * 
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     *
+     * @return \Psr\Http\Message\ResponseInterface
      */
     public function sendRequest()
     {
         $options = $this->prepareRequestOptions();
 
         $response = $this->client->request($this->method, $this->url, $options);
-        
+
         return $response;
     }
 
@@ -49,19 +47,6 @@ abstract class BasicRequest {
             RequestOptions::BODY => $this->body,
             RequestOptions::HEADERS => $this->headers,
         ];
-
-        if ( ! empty($this->files))
-        {
-            $options[RequestOptions::MULTIPART] = [];
-            foreach($this->files as $file)
-            {
-                $options[RequestOptions::MULTIPART][] = [
-                    'name'      => "file",
-                    'filename'  => "request.bdoc",
-                    'contents'  => $file,
-                ];
-            }
-        }
 
         return $options;
     }
