@@ -13,7 +13,7 @@ class XMLGenerator {
      * @param array $data
      * @param SimpleXMLElement $xml_data
      */
-    protected function array_to_xml(array $data, SimpleXMLElement &$xml_data)
+    protected static function array_to_xml(array $data, SimpleXMLElement &$xml_data)
     {
         foreach( $data as $key => $value ) {
             if( is_array($value) ) {
@@ -39,27 +39,26 @@ class XMLGenerator {
             $sum += $payment['sum'];
         }
 
-        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?><$xmlTag></$xmlTag>");
+        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?><Document><$xmlTag></$xmlTag></Document>");
 
-        self::array_to_xml(self::generatePaymentInitiationGroupHeaderXml(count($data['payments']), $sum, $data['initiator']), $xml);
+        self::array_to_xml(self::generatePaymentInitiationGroupHeaderXml(count($data['payments']), $sum, array_get($data, 'initiator', '')), $xml->$xmlTag);
 
         foreach ($data['payments'] as $payment)
         {
-            self::array_to_xml(self::generatePaymentInitiationPaymentXml($payment, $data, $sum, $configuration), $xml);
+            self::array_to_xml(self::generatePaymentInitiationPaymentXml($payment, $configuration), $xml->$xmlTag);
         }
 
         return $xml->asXML();
 
     }
 
-    private function generatePaymentInitiationPaymentXml($payment, $data, $sum, $configuration)
+    private static function generatePaymentInitiationPaymentXml($payment, $configuration)
     {
         return [
             "PAYMENT_INFORMATION" => [
                 "PAYMENT_INFORMATION_IDENTIFICATION"    => $payment['id'],
                 "PAYMENT_METHOD"                        => "TRF",
-                "INNER_NUMBER_OF_TRANSACTIONS"          => count($data['payments']),
-                "INNER_CONTROL_SUM"                     => $sum,
+                "INNER_NUMBER_OF_TRANSACTIONS"          => 1,
                 "REQUESTED_EXECUTION_DATE"              => (new DateTime())->format("Y-m-d"),
                 "REMITTER"                              => [
                     "REMITTER_NAME" => $configuration['name'],
@@ -71,7 +70,7 @@ class XMLGenerator {
                     ],
                 ],
                 "REMITTER_AGENT"                        => [
-                    "FINANCTIAL_INSTITUTION_IDENTIFICATION" => [
+                    "FINANCIAL_INSTITUTION_IDENTIFICATION" => [
                         "BIC" => $configuration['bic'],
                     ],
                 ],
@@ -88,7 +87,7 @@ class XMLGenerator {
                     "AMOUNT" => [
                         "INSTRUCTED_AMOUNT" => $payment['sum'],
                     ],
-                    "CHARGERS_BEARER"       => "DEBT",
+                    "CHARGES_BEARER"       => "DEBT",
                     "BENEFICIARY" => [
                         "BENEFICIARY_NAME" => $payment['name'],
                     ],
@@ -105,14 +104,17 @@ class XMLGenerator {
         ];
     }
 
-    private function generatePaymentInitiationGroupHeaderXml($count, $sum, $initiator)
+    private static function generatePaymentInitiationGroupHeaderXml($count, $sum, $initiator)
     {
         return [
             "GROUP_HEADER" => [
-                "MESSAGE_IDENTIFICATION"    => str_random(30),
+                "MESSAGE_IDENTIFICATION"    => "TestID",
                 "CREATION_DATETIME"         => (new DateTime())->format(DateTime::ISO8601),
                 "NUMBER_OF_TRANSACTIONS"    => $count,
                 "CONTROL_SUM"               => $sum,
+                "INITIATING_PARTY"          => [
+                    "NAME" => $initiator,
+                ],
             ],
         ];
     }

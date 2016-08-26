@@ -34,6 +34,7 @@ class Tag {
         INNER_NUMBER_OF_TRANSACTIONS = "NbOfTxs",
         INNER_CONTROL_SUM = "CtrlSum",
         INSTRUCTED_AMOUNT = "InstdAmt",
+        LOCAL_INSTRUMENT = "LclInstrm",
         MERCHANT_PAYMENT_TYPE = "Type",
         MESSAGE_IDENTIFICATION = "MsgId",
         NAME = "Nm",
@@ -69,7 +70,7 @@ class Tag {
         ACCOUNT_STATEMENT_REQUEST = "AcctRptgReq",
         MERCHANT_REPORT_REQUEST = "MerchantReportRequest",
         PAYMENT_INITIATION_REQUEST = "CstmrCdtTrfInitn",
-        
+
         ACCOUNT_STATEMENT_RESPONSE = "BkToCstmrStmt",
         MERCHANT_REPORT_RESPONSE = "BkToCstmrDbtCdtNtfctn"
     ;

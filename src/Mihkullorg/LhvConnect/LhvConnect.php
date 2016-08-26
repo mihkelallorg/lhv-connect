@@ -16,8 +16,6 @@ class LhvConnect {
     private $client;
     private $configuration;
 
-    private $request;
-
     public function __construct(array $configuration)
     {
         $this->configuration = $configuration;
@@ -105,7 +103,7 @@ class LhvConnect {
      * @param $payments
      * @return string
      */
-    public function getPaymentInititationXML($payments)
+    public function getPaymentInitiationXML($payments)
     {
         $request = new PaymentInitiationRequest($this->client, $this->configuration, $payments);
 

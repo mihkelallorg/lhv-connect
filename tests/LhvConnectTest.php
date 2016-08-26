@@ -114,15 +114,134 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
     public function it_test_a_correct_payment_initiation_request()
     {
         $conf = [
-            'IBAN'  => '',
-            'name'  => '',
-            'url'   => 'https://connect.lhv.eu',
-            'cert'  => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
-            'bic'   => 'LHVVEE22',
+            'IBAN'      => "EE1955501215926523",
+            'name'      => "Hendrik Ilves Toomas",
+            'url'       => 'https://connect.lhv.eu',
+            'cert'      => [ 'path' => __DIR__ . '/test_cert.p12', 'password' => 'password'],
+            'bic'       => 'LHVBEE22',
+            'initiator' => 'TestUser'
         ];
 
+        $payments = [
+            [
+                'id'            => 1,
+                'currency'      => 'EUR',
+                'sum'           => rand(1,250),
+                'name'          => str_random(),
+                'IBAN'          => str_random(),
+                'description'   => str_random(),
+            ],
+            [
+                'id'            => 2,
+                'currency'      => 'EUR',
+                'sum'           => rand(1,250),
+                'name'          => str_random(),
+                'IBAN'          => str_random(),
+                'description'   => str_random(),
+            ],
+        ];
+
+        $lhv = new LhvConnect($conf);
+
+        $xml = $lhv->getPaymentInitiationXML(['payments' => $payments, 'initiator' => $conf['initiator']]);
+
+        $sum = array_sum(array_pluck($payments, 'sum'));
+
+        $correctXml = $this->getPaymentInitiationRequestXML($conf, $payments, $sum);
+
+        $xml = new \SimpleXMLElement($xml);
+        $correctXml = new \SimpleXMLElement($correctXml);
 
 
+        $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->NbOfTxs, $xml->CstmrCdtTrfInitn->GrpHdr->NbOfTxs);
+        $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->CtrlSum, $xml->CstmrCdtTrfInitn->GrpHdr->CtrlSum);
+        $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->InitgPty, $xml->CstmrCdtTrfInitn->GrpHdr->InitgPty);
+        $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->InitgPty, $xml->CstmrCdtTrfInitn->GrpHdr->InitgPty);
+
+        for($i = 0 ; $i<2 ; $i++)
+        {
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->PmtInfId, $xml->CstmrCdtTrfInitn->PmtInf[$i]->PmtInfId);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->ReqdExctdnDt, $xml->CstmrCdtTrfInitn->PmtInf[$i]->ReqdExctdnDt);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm, $xml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->DbtrAgt->FinInstnId->BIC, $xml->CstmrCdtTrfInitn->PmtInf[$i]->DbtrAgt->FinInstnId->BIC);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Ctdr->Nm, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Ctdr->Nm);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->CdtrAcct->Id->IBAN, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->CdtrAcct->Id->IBAN);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->RmtInf->Ustrd, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->RmtInf->Ustrd);
+        }
+    }
+
+
+    private function getPaymentInitiationRequestXML($conf, $payments, $sum)
+    {
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+            <Document>
+            <CstmrCdtTrfInitn>
+                <GrpHdr>
+                    <MsgId>TestID</MsgId>
+                    <CreDtTm>" . (new DateTime())->format(DateTime::ISO8601) . "</CreDtTm>
+                    <NbOfTxs>" . count($payments) . "</NbOfTxs>
+                    <CtrlSum>" . $sum . "</CtrlSum>
+                    <InitgPty>
+                        <Nm>" . $conf['initiator'] . "</Nm>
+                    </InitgPty>
+                </GrpHdr>
+        ";
+
+        foreach ($payments as $p){
+            $xml .= "<PmtInf>
+                <PmtInfId>" . $p['id'] . "</PmtInfId>
+                <PmtMtd>TRF</PmtMtd>
+                <BtchBookg>false</BtchBookg>
+                <NbOfTxs>1</NbOfTxs>
+                <ReqdExctnDt>" . (new DateTime())->format("Y-m-d") . "</ReqdExctnDt>
+                <Dbtr>
+                    <Nm>" . $conf['name'] . "</Nm>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <IBAN>" . $conf['IBAN'] . "</IBAN>
+                    </Id>
+                    <Ccy>EUR</Ccy>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <BIC>LHVBEE22</BIC>
+                    </FinInstnId>
+                </DbtrAgt>
+                <ChrgBr>DEBT</ChrgBr>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId/>
+                    </PmtId>
+                    <PmtTpInf>
+                        <LclInstrm>
+                            <Prtry>NORM</Prtry>
+                        </LclInstrm>
+                    </PmtTpInf>
+                    <Amt>
+                        <InstdAmt Ccy=\"EUR\">" . $p['sum'] . "</InstdAmt>
+                    </Amt>
+                    <ChrgBr>DEBT</ChrgBr>
+                    <Cdtr>
+                        <Nm>" . $p['name'] . "</Nm>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                            <IBAN>" . $p['IBAN'] . "</IBAN>
+                        </Id>
+                    </CdtrAcct>
+                    <RmtInf>
+                        <Ustrd>" . $p['description'] . "</Ustrd>
+                    </RmtInf>
+                </CdtTrfTxInf>
+            </PmtInf>";
+        }
+
+        $xml .= "
+        </CstmrCdtTrfInitn>
+        </Document>";
+
+        return $xml;
     }
 
 }
