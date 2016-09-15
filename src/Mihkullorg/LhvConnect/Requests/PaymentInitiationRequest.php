@@ -6,7 +6,7 @@ use Mihkullorg\LhvConnect\XMLGenerator;
 
 class PaymentInitiationRequest extends FullRequest {
 
-    protected $url = "payment-initiation";
+    protected $url = "payment";
     protected $method = "POST";
 
     /**

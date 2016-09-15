@@ -116,8 +116,13 @@ class LhvConnect {
      */
     public function makePaymentInitiationRequest($ddoc)
     {
-        $body = file_get_contents($ddoc);
-        $request = new PaymentInitiationRequest($this->client, $this->configuration, [], $body);
+        $body = fopen($ddoc, 'r');
+
+        $headers = [
+            'Content-Type' => 'application/vnd.etsi.asic-e+zip'
+        ];
+
+        $request = new PaymentInitiationRequest($this->client, $this->configuration, [], $body, $headers);
 
         return $request->sendRequest();
     }
