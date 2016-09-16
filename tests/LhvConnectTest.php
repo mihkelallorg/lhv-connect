@@ -174,7 +174,8 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
     private function getPaymentInitiationRequestXML($conf, $payments, $sum)
     {
         $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-            <Document>
+            <Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03
+pain.001.001.03.xsd\">
             <CstmrCdtTrfInitn>
                 <GrpHdr>
                     <MsgId>TestID</MsgId>

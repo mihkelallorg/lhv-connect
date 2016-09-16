@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a40f2377-25e8-4988-812d-5f3a9bfdae2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php" afterPath="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/LhvConnectTest.php" afterPath="$PROJECT_DIR$/tests/LhvConnectTest.php" />
     </list>
     <ignored path="lhv-connect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,9 +27,11 @@
       <file leaf-file-name="XMLGenerator.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="110" column="60" selection-start-line="110" selection-start-column="60" selection-end-line="110" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="438">
+              <caret line="84" column="76" selection-start-line="84" selection-start-column="76" selection-end-line="84" selection-end-column="76" />
+              <folding>
+                <marker date="1474009225000" expanded="true" signature="1205:1383" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,9 +91,9 @@
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/FullRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/BasicRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Tag.php" />
-        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/PaymentInitiationRequest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/LhvConnect.php" />
+        <option value="$PROJECT_DIR$/tests/LhvConnectTest.php" />
         <option value="$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php" />
       </list>
     </option>
@@ -174,6 +176,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lhv-connect" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,12 +380,12 @@
       <workItem from="1472535076716" duration="1551000" />
       <workItem from="1472556622250" duration="576000" />
       <workItem from="1473945611666" duration="825000" />
-      <workItem from="1474006881168" duration="670000" />
+      <workItem from="1474006881168" duration="1782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195608000" />
+    <option name="totallyTimeSpent" value="196720000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="158" column="118" selection-start-line="158" selection-start-column="118" selection-end-line="158" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/Requests/HeartbeatGetRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -654,11 +663,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/LhvConnectTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+          <folding>
+            <marker date="1474008532000" expanded="false" signature="51:364" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="423:8779" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="433:452" ph=" @test ..." />
+            <marker date="1474008532000" expanded="true" signature="517:2111" ph="{...}" />
+            <marker date="1474008532000" expanded="true" signature="541:712" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="727:775" ph=" The response from the bank ..." />
+            <marker date="1474008532000" expanded="true" signature="939:1021" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="1038:1105" ph=" Prepare container for the requests to be made ..." />
+            <marker date="1474008532000" expanded="true" signature="1213:1331" ph=" Heartbeat request returns the timestamp. ..." />
+            <marker date="1474008532000" expanded="true" signature="1374:1451" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="1391:1449" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="1519:1563" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="1685:1726" ph=" Only 1 request made ..." />
+            <marker date="1474008532000" expanded="true" signature="1843:1898" ph=" Make sure the request was correct ..." />
+            <marker date="1474008532000" expanded="true" signature="2120:2139" ph=" @test ..." />
+            <marker date="1474008532000" expanded="true" signature="2207:2961" ph="{...}" />
+            <marker date="1474008532000" expanded="true" signature="2231:2402" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="2511:2578" ph=" 1 request, heartbeat doesn't use inbox system ..." />
+            <marker date="1474008532000" expanded="true" signature="2621:2680" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="2638:2678" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="2748:2792" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="2970:2989" ph=" @test ..." />
+            <marker date="1474008532000" expanded="true" signature="3058:6065" ph="{...}" />
+            <marker date="1474008532000" expanded="true" signature="3082:3415" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="3440:4057" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="3454:3742" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="3758:4046" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="4967:6059" ph="{...}" />
+            <marker date="1474008532000" expanded="true" signature="6143:8777" ph="{...}" />
+            <marker date="1474008532000" expanded="true" signature="6433:6896" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="6464:6896" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="6489:6887" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="6769:6861" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="6935:8679" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="6964:8667" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7245:7320" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7347:7520" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7372:7457" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7546:7684" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7579:7657" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7752:8645" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7780:7847" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7878:8031" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="7914:7999" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="8057:8159" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="8228:8308" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="8339:8490" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="8368:8458" ph="..." />
+            <marker date="1474008532000" expanded="true" signature="8519:8614" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mihkullorg/LhvConnect/XMLGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="110" column="60" selection-start-line="110" selection-start-column="60" selection-end-line="110" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="438">
+          <caret line="84" column="76" selection-start-line="84" selection-start-column="76" selection-end-line="84" selection-end-column="76" />
+          <folding>
+            <marker date="1474009225000" expanded="true" signature="1205:1383" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

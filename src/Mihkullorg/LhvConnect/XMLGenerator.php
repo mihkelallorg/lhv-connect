@@ -33,13 +33,18 @@ class XMLGenerator {
     public static function paymentInitiationXML(array $data, array $configuration)
     {
         $xmlTag = Tag::PAYMENT_INITIATION_REQUEST;
+
         $sum = 0;
+
         foreach($data['payments'] as $payment)
         {
             $sum += $payment['sum'];
         }
 
-        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?><Document><$xmlTag></$xmlTag></Document>");
+        $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\" 
+xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" 
+xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd\"><$xmlTag></$xmlTag></Document>");
 
         self::array_to_xml(self::generatePaymentInitiationGroupHeaderXml(count($data['payments']), $sum, array_get($data, 'initiator', '')), $xml->$xmlTag);
 
@@ -66,8 +71,8 @@ class XMLGenerator {
                 "REMITTER_ACCOUNT"                      => [
                     "REMITTER_ACCOUNT_IDENTIFICATION" => [
                         "IBAN"      => $configuration['IBAN'],
-                        "CURRENCY"  => $payment['currency'],
                     ],
+                    "CURRENCY"  => $payment['currency'],
                 ],
                 "REMITTER_AGENT"                        => [
                     "FINANCIAL_INSTITUTION_IDENTIFICATION" => [
@@ -77,7 +82,7 @@ class XMLGenerator {
                 "CHARGES_BEARER"                            => "DEBT",
                 "CREDIT_TRANSFER_TRANSACTION_INFORMATION"   => [
                     "PAYMENT_IDENTIFICATION" => [
-                        "END_TO_END_IDENTIFICATION" => "",
+                        "END_TO_END_IDENTIFICATION" => rand(100000, 999999),
                     ],
                     "PAYMENT_TYPE_INFORMATION" => [
                         "LOCAL_INSTRUMENT" => [
