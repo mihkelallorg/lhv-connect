@@ -108,7 +108,7 @@ class XMLGenerator {
     {
         return [
             "GROUP_HEADER" => [
-                "MESSAGE_IDENTIFICATION"    => "TestID",
+                "MESSAGE_IDENTIFICATION"    => str_random(16),
                 "CREATION_DATETIME"         => (new DateTime())->format(DateTime::ISO8601),
                 "NUMBER_OF_TRANSACTIONS"    => $count,
                 "CONTROL_SUM"               => $sum,
