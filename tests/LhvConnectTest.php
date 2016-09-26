@@ -165,6 +165,8 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm, $xml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->DbtrAgt->FinInstnId->BIC, $xml->CstmrCdtTrfInitn->PmtInf[$i]->DbtrAgt->FinInstnId->BIC);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Ctdr->Nm, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Ctdr->Nm);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Amt->InstdAmt, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Amt->InstdAmt);
+            $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Amt->InstdAmt['Ccy'], $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->Amt->InstdAmt['Ccy']);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->CdtrAcct->Id->IBAN, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->CdtrAcct->Id->IBAN);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->RmtInf->Ustrd, $xml->CstmrCdtTrfInitn->PmtInf[$i]->CdtTrfTxInf->RmtInf->Ustrd);
         }
@@ -179,7 +181,7 @@ pain.001.001.03.xsd\">
             <CstmrCdtTrfInitn>
                 <GrpHdr>
                     <MsgId>TestID</MsgId>
-                    <CreDtTm>" . (new DateTime())->format(DateTime::ISO8601) . "</CreDtTm>
+                    <CreDtTm>" . (new DateTime())->format(DateTime::ATOM) . "</CreDtTm>
                     <NbOfTxs>" . count($payments) . "</NbOfTxs>
                     <CtrlSum>" . $sum . "</CtrlSum>
                     <InitgPty>

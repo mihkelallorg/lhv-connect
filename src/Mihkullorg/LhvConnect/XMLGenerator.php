@@ -20,7 +20,17 @@ class XMLGenerator {
                 $subnode = $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"));
                 self::array_to_xml($value, $subnode);
             } else {
-                $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"), $value);
+                $key = constant("Mihkullorg\\LhvConnect\\Tag::$key");
+                $xml_data->addChild($key, $value);
+
+                /**
+                 * ONLY SUPPORTS EUR ATM
+                 * TODO: Add support for other currencies
+                 */
+                if ($key == Tag::INSTRUCTED_AMOUNT)
+                {
+                    $xml_data->$key->addAttribute('Ccy', 'EUR');
+                }
             }
         }
     }
@@ -114,7 +124,7 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
         return [
             "GROUP_HEADER" => [
                 "MESSAGE_IDENTIFICATION"    => str_random(16),
-                "CREATION_DATETIME"         => (new DateTime())->format(DateTime::ISO8601),
+                "CREATION_DATETIME"         => (new DateTime())->format(DateTime::ATOM),
                 "NUMBER_OF_TRANSACTIONS"    => $count,
                 "CONTROL_SUM"               => $sum,
                 "INITIATING_PARTY"          => [
