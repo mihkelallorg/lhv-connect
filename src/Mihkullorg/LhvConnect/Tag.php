@@ -18,7 +18,7 @@ class Tag {
         BENEFICIARY_AGENT = "CdtrAgt",
         BENEFICIARY_NAME = "Nm",
         BIC = "BIC",
-        CREATION_DATETIME = "CrdDtTm",
+        CREATION_DATETIME = "CreDtTm",
         CREDIT_TRANSFER_TRANSACTION_INFORMATION = "CdtTrfTxInf",
         CHARGES_BEARER = "ChrgBr",
         DOCUMENT = "Document",
