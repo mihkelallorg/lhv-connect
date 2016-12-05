@@ -130,6 +130,7 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
                 'name'          => str_random(),
                 'IBAN'          => str_random(),
                 'description'   => str_random(),
+                'ref_nr'        => str_random(),
             ],
             [
                 'id'            => 2,
@@ -138,6 +139,7 @@ class LhvConnectTest extends PHPUnit_Framework_TestCase {
                 'name'          => str_random(),
                 'IBAN'          => str_random(),
                 'description'   => str_random(),
+                'ref_nr'        => str_random(),
             ],
         ];
 
@@ -235,6 +237,11 @@ pain.001.001.03.xsd\">
                     </CdtrAcct>
                     <RmtInf>
                         <Ustrd>" . $p['description'] . "</Ustrd>
+                        <Strd>
+                            <CdtrRefInf>
+                                <Ref>" . $p['ref_nr'] . "</Ref>
+                            </CdtrRefInf>
+                        </Strd>
                     </RmtInf>
                 </CdtTrfTxInf>
             </PmtInf>";

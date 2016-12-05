@@ -69,28 +69,28 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
 
     private static function generatePaymentInitiationPaymentXml($payment, $configuration)
     {
-        return [
+        $xml = [
             "PAYMENT_INFORMATION" => [
-                "PAYMENT_INFORMATION_IDENTIFICATION"    => $payment['id'],
-                "PAYMENT_METHOD"                        => "TRF",
-                "INNER_NUMBER_OF_TRANSACTIONS"          => 1,
-                "REQUESTED_EXECUTION_DATE"              => (new DateTime())->format("Y-m-d"),
-                "REMITTER"                              => [
+                "PAYMENT_INFORMATION_IDENTIFICATION" => $payment['id'],
+                "PAYMENT_METHOD" => "TRF",
+                "INNER_NUMBER_OF_TRANSACTIONS" => 1,
+                "REQUESTED_EXECUTION_DATE" => (new DateTime())->format("Y-m-d"),
+                "REMITTER" => [
                     "REMITTER_NAME" => $configuration['name'],
                 ],
-                "REMITTER_ACCOUNT"                      => [
+                "REMITTER_ACCOUNT" => [
                     "REMITTER_ACCOUNT_IDENTIFICATION" => [
-                        "IBAN"      => $configuration['IBAN'],
+                        "IBAN" => $configuration['IBAN'],
                     ],
-                    "CURRENCY"  => $payment['currency'],
+                    "CURRENCY" => $payment['currency'],
                 ],
-                "REMITTER_AGENT"                        => [
+                "REMITTER_AGENT" => [
                     "FINANCIAL_INSTITUTION_IDENTIFICATION" => [
                         "BIC" => $configuration['bic'],
                     ],
                 ],
-                "CHARGES_BEARER"                            => "DEBT",
-                "CREDIT_TRANSFER_TRANSACTION_INFORMATION"   => [
+                "CHARGES_BEARER" => "DEBT",
+                "CREDIT_TRANSFER_TRANSACTION_INFORMATION" => [
                     "PAYMENT_IDENTIFICATION" => [
                         "END_TO_END_IDENTIFICATION" => rand(100000, 999999),
                     ],
@@ -102,11 +102,11 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
                     "AMOUNT" => [
                         "INSTRUCTED_AMOUNT" => $payment['sum'],
                     ],
-                    "CHARGES_BEARER"       => "DEBT",
+                    "CHARGES_BEARER" => "DEBT",
                     "BENEFICIARY" => [
                         "BENEFICIARY_NAME" => $payment['name'],
                     ],
-                    "BENEFICIARY_ACCOUNT"   => [
+                    "BENEFICIARY_ACCOUNT" => [
                         "BENEFICIARY_ACCOUNT_IDENTIFICATION" => [
                             "IBAN" => $payment['IBAN'],
                         ],
@@ -117,6 +117,17 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
                 ],
             ],
         ];
+
+        if (isset($payment['ref_nr']) && strlen($payment['ref_nr']))
+        {
+            $xml["PAYMENT_INFORMATION"]["CREDIT_TRANSFER_TRANSACTION_INFORMATION"]["REMITTANCE_INFORMATION"]["STRUCTURED"] = [
+                "BENEFICIARY_REFERENCE_INFORMATION" => [
+                    "REFERENCE" => $payment['ref_nr'],
+                ],
+            ];
+        }
+
+        return $xml;
     }
 
     private static function generatePaymentInitiationGroupHeaderXml($count, $sum, $initiator)
