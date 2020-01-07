@@ -12,9 +12,9 @@ use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
 use Mihkullorg\LhvConnect\LhvConnect;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class LhvConnectTest extends PHPUnit_Framework_TestCase {
+class LhvConnectTest extends TestCase {
 
 
     /**
