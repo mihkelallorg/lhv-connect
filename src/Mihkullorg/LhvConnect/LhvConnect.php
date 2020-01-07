@@ -11,8 +11,8 @@ use Mihkullorg\LhvConnect\Requests\PaymentInitiationRequest;
 use Mihkullorg\LhvConnect\Requests\RetrieveMessageFromInbox;
 use Psr\Http\Message\ResponseInterface;
 
-class LhvConnect {
-
+class LhvConnect
+{
     private $client;
     private $configuration;
 
@@ -22,7 +22,6 @@ class LhvConnect {
         $this->client = new Client([
             'base_uri' => $this->configuration['url'],
         ]);
-
     }
 
     /**
@@ -52,12 +51,10 @@ class LhvConnect {
     {
         $messages = [];
 
-        while(true)
-        {
+        while (true) {
             $message = $this->makeRetrieveMessageFromInboxRequest();
 
-            if ( !isset($message->getHeaders()['Content-Length']) || $message->getHeader('Content-Length')[0] == 0)
-            {
+            if (!isset($message->getHeaders()['Content-Length']) || $message->getHeader('Content-Length')[0] == 0) {
                 break;
             }
 
@@ -126,5 +123,4 @@ class LhvConnect {
 
         return $request->sendRequest();
     }
-
 }

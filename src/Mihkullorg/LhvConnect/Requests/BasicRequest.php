@@ -5,8 +5,8 @@ namespace Mihkullorg\LhvConnect\Requests;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 
-abstract class BasicRequest {
-
+abstract class BasicRequest
+{
     protected $url;
     protected $method;
     protected $client;

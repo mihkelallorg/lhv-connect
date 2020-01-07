@@ -4,7 +4,8 @@ namespace Mihkullorg\LhvConnect;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelLhvConnectServiceProvider extends ServiceProvider {
+class LaravelLhvConnectServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.

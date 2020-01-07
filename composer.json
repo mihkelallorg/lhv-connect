@@ -1,40 +1,38 @@
 {
-  "name": "mihkullorg/lhv-connect",
-  "description": "LHV bank's CONNECT service for Laravel 5",
-  "keywords": ["lhv","lhv-connect", "connect", "lhv-bank", "bank"],
-  "homepage": "https://github.com/mihkullorg/lhv-connect",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Mihkel Allorg",
-      "email": "mihkel.allorg@gmail.com",
-      "role": "Developer"
+    "name": "mihkullorg/lhv-connect",
+    "description": "LHV bank's CONNECT service for Laravel 6",
+    "keywords": ["lhv", "lhv-connect", "connect", "lhv-bank", "bank"],
+    "homepage": "https://github.com/mihkullorg/lhv-connect",
+    "license": "MIT",
+    "authors": [{
+        "name": "Mihkel Allorg",
+        "email": "mihkel.allorg@gmail.com",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": "^7.2",
+        "illuminate/config": "^6.0",
+        "illuminate/support": "^6.0",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mihkullorg\\LhvConnect\\": "src/Mihkullorg/LhvConnect"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mihkullorg\\LhvConnect\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mihkullorg\\LhvConnect\\LaravelLhvConnectServiceProvider"
+            ]
+        }
     }
-  ],
-  "require": {
-    "php": ">=5.5.9",
-    "illuminate/config": "*",
-    "illuminate/support": "*",
-    "guzzlehttp/guzzle": "*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Mihkullorg\\LhvConnect\\": "src/Mihkullorg/LhvConnect"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Mihkullorg\\LhvConnect\\Tests\\": "tests"
-    }
-  },
-  "extra": {
-    "laravel": {
-        "providers": [
-            "Mihkullorg\\LhvConnect\\LaravelLhvConnectServiceProvider"
-        ]
-    }
-  }
 }

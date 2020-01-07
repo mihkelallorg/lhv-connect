@@ -13,11 +13,11 @@ use GuzzleHttp\Psr7\Response;
 use Mihkullorg\LhvConnect\LhvConnect;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
 use Illuminate\Support\Str;
+use Illuminate\Support\Arr;
 use PHPUnit\Framework\TestCase;
 
-class LhvConnectTest extends TestCase {
-
-
+class LhvConnectTest extends TestCase
+{
     /**
      * @test
      */
@@ -58,7 +58,7 @@ class LhvConnectTest extends TestCase {
             'handler' => $handler,
         ]);
 
-        $request = new HeartbeatGetRequest($client, $conf);
+        $request = new HeartbeatGetRequest($client, $conf); 
         $response = $request->sendRequest();
 
         /**
@@ -127,7 +127,7 @@ class LhvConnectTest extends TestCase {
             [
                 'id'            => 1,
                 'currency'      => 'EUR',
-                'sum'           => rand(1,250),
+                'sum'           => rand(1, 250),
                 'name'          => Str::random(),
                 'IBAN'          => Str::random(),
                 'description'   => Str::random(),
@@ -136,7 +136,7 @@ class LhvConnectTest extends TestCase {
             [
                 'id'            => 2,
                 'currency'      => 'EUR',
-                'sum'           => rand(1,250),
+                'sum'           => rand(1, 250),
                 'name'          => Str::random(),
                 'IBAN'          => Str::random(),
                 'description'   => Str::random(),
@@ -148,7 +148,7 @@ class LhvConnectTest extends TestCase {
 
         $xml = $lhv->getPaymentInitiationXML(['payments' => $payments, 'initiator' => $conf['initiator']]);
 
-        $sum = array_sum(array_pluck($payments, 'sum'));
+        $sum = array_sum(Arr::pluck($payments, 'sum'));
 
         $correctXml = $this->getPaymentInitiationRequestXML($conf, $payments, $sum);
 
@@ -161,8 +161,7 @@ class LhvConnectTest extends TestCase {
         $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->InitgPty, $xml->CstmrCdtTrfInitn->GrpHdr->InitgPty);
         $this->assertEquals($correctXml->CstmrCdtTrfInitn->GrpHdr->InitgPty, $xml->CstmrCdtTrfInitn->GrpHdr->InitgPty);
 
-        for($i = 0 ; $i<2 ; $i++)
-        {
+        for ($i = 0 ; $i<2 ; $i++) {
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->PmtInfId, $xml->CstmrCdtTrfInitn->PmtInf[$i]->PmtInfId);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->ReqdExctdnDt, $xml->CstmrCdtTrfInitn->PmtInf[$i]->ReqdExctdnDt);
             $this->assertEquals($correctXml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm, $xml->CstmrCdtTrfInitn->PmtInf[$i]->Dbtr->Nm);
@@ -193,7 +192,7 @@ pain.001.001.03.xsd\">
                 </GrpHdr>
         ";
 
-        foreach ($payments as $p){
+        foreach ($payments as $p) {
             $xml .= "<PmtInf>
                 <PmtInfId>" . $p['id'] . "</PmtInfId>
                 <PmtMtd>TRF</PmtMtd>
@@ -254,5 +253,4 @@ pain.001.001.03.xsd\">
 
         return $xml;
     }
-
 }

@@ -9,8 +9,8 @@ use KG\DigiDoc\Api;
 use KG\DigiDoc\Soap\Client as DigiDocClient;
 use SimpleXMLElement;
 
-abstract class FullRequest extends BasicRequest {
-
+abstract class FullRequest extends BasicRequest
+{
     protected $data; //The data user sets. FROM_DATE, TO_DATE etc. Depends on the request
 
     protected $xmlTag;
@@ -30,6 +30,5 @@ abstract class FullRequest extends BasicRequest {
      *
      * @return string
      */
-    public abstract function getXML();
-
+    abstract public function getXML();
 }
