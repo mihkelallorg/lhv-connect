@@ -1,12 +1,10 @@
-# LHV CONNECT API package for Laravel 5
+# LHV CONNECT API package for Laravel 6
 
 ## Quickstart
 
     $ composer require mihkelallorg/lhv-connect
 
-Then register the ServiceProvider in config/app.php
-
-    Mihkullorg\LhvConnect\LaravelLhvConnectServiceProvider::class
+NB! Service provider Mihkullorg\LhvConnect\LaravelLhvConnectServiceProvider::class is automatically registered.
 
 In terminal run
 
@@ -34,4 +32,3 @@ Delete the message from LHV inbox
 Retrieve all messages. This gets you all the messages but it also deletes all the messages from the inbox.
 
     $messages = $lhv->getAllMessages();
-
