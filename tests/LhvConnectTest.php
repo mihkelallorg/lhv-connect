@@ -103,7 +103,7 @@ class LhvConnectTest extends TestCase {
 
         $request = new HeartbeatGetRequest($client, $conf);
 
-        $this->setExpectedException(Exception::class, "", 503);
+        $this->expectException(Exception::class, "", 503);
 
         $request->sendRequest();
     }
