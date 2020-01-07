@@ -12,6 +12,7 @@ use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
 use Mihkullorg\LhvConnect\LhvConnect;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
+use Illuminate\Support\Str;
 use PHPUnit\Framework\TestCase;
 
 class LhvConnectTest extends TestCase {
@@ -127,19 +128,19 @@ class LhvConnectTest extends TestCase {
                 'id'            => 1,
                 'currency'      => 'EUR',
                 'sum'           => rand(1,250),
-                'name'          => str_random(),
-                'IBAN'          => str_random(),
-                'description'   => str_random(),
-                'ref_nr'        => str_random(),
+                'name'          => Str::random(),
+                'IBAN'          => Str::random(),
+                'description'   => Str::random(),
+                'ref_nr'        => Str::random(),
             ],
             [
                 'id'            => 2,
                 'currency'      => 'EUR',
                 'sum'           => rand(1,250),
-                'name'          => str_random(),
-                'IBAN'          => str_random(),
-                'description'   => str_random(),
-                'ref_nr'        => str_random(),
+                'name'          => Str::random(),
+                'IBAN'          => Str::random(),
+                'description'   => Str::random(),
+                'ref_nr'        => Str::random(),
             ],
         ];
 
