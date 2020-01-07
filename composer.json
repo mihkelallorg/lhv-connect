@@ -29,5 +29,12 @@
     "psr-4": {
       "Mihkullorg\\LhvConnect\\Tests\\": "tests"
     }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Mihkullorg\\LhvConnect\\LaravelLhvConnectServiceProvider"
+        ]
+    }
   }
 }
