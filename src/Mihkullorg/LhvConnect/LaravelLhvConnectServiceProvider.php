@@ -6,7 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class LaravelLhvConnectServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -46,10 +45,10 @@ class LaravelLhvConnectServiceProvider extends ServiceProvider
 
     public function handleConfigs()
     {
-        $configPath = __DIR__ . '/../../config/config.php';
+        $configPath = __DIR__.'/../../config/config.php';
 
         $this->publishes([
-            $configPath => config_path('lhv-connect.php')
+            $configPath => config_path('lhv-connect.php'),
         ]);
     }
 }
