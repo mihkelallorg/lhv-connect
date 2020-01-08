@@ -21,6 +21,7 @@ class LhvConnect
         $this->configuration = $configuration;
         $this->client = new Client([
             'base_uri' => $this->configuration['url'],
+            'verify' => false,
         ]);
     }
 
