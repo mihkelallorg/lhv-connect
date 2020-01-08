@@ -2,15 +2,10 @@
 
 namespace Mihkullorg\LhvConnect\Requests;
 
-use DateTime;
-use Exception;
 use GuzzleHttp\Client;
-use KG\DigiDoc\Api;
-use KG\DigiDoc\Soap\Client as DigiDocClient;
-use SimpleXMLElement;
 
-abstract class FullRequest extends BasicRequest {
-
+abstract class FullRequest extends BasicRequest
+{
     protected $data; //The data user sets. FROM_DATE, TO_DATE etc. Depends on the request
 
     protected $xmlTag;
@@ -26,10 +21,9 @@ abstract class FullRequest extends BasicRequest {
     }
 
     /**
-     * Return the xml as a string
+     * Return the xml as a string.
      *
      * @return string
      */
-    public abstract function getXML();
-
+    abstract public function getXML();
 }

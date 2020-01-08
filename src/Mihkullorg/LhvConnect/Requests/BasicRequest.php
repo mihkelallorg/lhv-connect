@@ -5,8 +5,8 @@ namespace Mihkullorg\LhvConnect\Requests;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 
-abstract class BasicRequest {
-
+abstract class BasicRequest
+{
     protected $url;
     protected $method;
     protected $client;
@@ -24,7 +24,7 @@ abstract class BasicRequest {
     }
 
     /**
-     * Make the request to the server
+     * Make the request to the server.
      *
      * @return \Psr\Http\Message\ResponseInterface
      */
@@ -44,7 +44,7 @@ abstract class BasicRequest {
                 $this->configuration['cert']['path'],
                 $this->configuration['cert']['password'],
             ],
-            RequestOptions::BODY => $this->body,
+            RequestOptions::BODY    => $this->body,
             RequestOptions::HEADERS => $this->headers,
         ];
 

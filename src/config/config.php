@@ -1,25 +1,25 @@
 <?php
 
 return [
-    'tmp_folder' => "/tmp",
-    'accounts' => [
+    'tmp_folder' => '/tmp',
+    'accounts'   => [
         'name' => [
-            'url' => "https://connect.lhv.eu",
+            'url'  => 'https://connect.lhv.eu',
             'cert' => [
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
-            'IBAN' => "",
-            'name' => "",
-            'bic'  => "LHVBEE22",
+            'IBAN' => '',
+            'name' => '',
+            'bic'  => 'LHVBEE22',
         ],
         'name2' => [
-            'url' => "https://connect.lhv.eu",
+            'url'  => 'https://connect.lhv.eu',
             'cert' => [
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
-            'IBAN' => "",
+            'IBAN' => '',
         ],
     ],
 

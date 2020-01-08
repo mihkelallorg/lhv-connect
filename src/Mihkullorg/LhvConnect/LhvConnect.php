@@ -3,16 +3,14 @@
 namespace Mihkullorg\LhvConnect;
 
 use GuzzleHttp\Client;
-use Mihkullorg\LhvConnect\Requests\AccountStatementRequest;
 use Mihkullorg\LhvConnect\Requests\DeleteMessageInInbox;
 use Mihkullorg\LhvConnect\Requests\HeartbeatGetRequest;
-use Mihkullorg\LhvConnect\Requests\MerchantPaymentReportRequest;
 use Mihkullorg\LhvConnect\Requests\PaymentInitiationRequest;
 use Mihkullorg\LhvConnect\Requests\RetrieveMessageFromInbox;
 use Psr\Http\Message\ResponseInterface;
 
-class LhvConnect {
-
+class LhvConnect
+{
     private $client;
     private $configuration;
 
@@ -22,11 +20,10 @@ class LhvConnect {
         $this->client = new Client([
             'base_uri' => $this->configuration['url'],
         ]);
-
     }
 
     /**
-     * Test request. Tests the connection to the server
+     * Test request. Tests the connection to the server.
      *
      * @return mixed|\Psr\Http\Message\ResponseInterface
      */
@@ -44,7 +41,7 @@ class LhvConnect {
 
     /**
      * Retrieve all the messages from the inbox
-     * Deletes all the retrieved messages from the inbox
+     * Deletes all the retrieved messages from the inbox.
      *
      * @return array
      */
@@ -52,12 +49,10 @@ class LhvConnect {
     {
         $messages = [];
 
-        while(true)
-        {
+        while (true) {
             $message = $this->makeRetrieveMessageFromInboxRequest();
 
-            if ( !isset($message->getHeaders()['Content-Length']) || $message->getHeader('Content-Length')[0] == 0)
-            {
+            if (!isset($message->getHeaders()['Content-Length']) || $message->getHeader('Content-Length')[0] == 0) {
                 break;
             }
 
@@ -89,6 +84,7 @@ class LhvConnect {
 
     /**
      * @param ResponseInterface $message
+     *
      * @return ResponseInterface
      */
     public function makeDeleteMessageInInboxRequest(ResponseInterface $message)
@@ -101,6 +97,7 @@ class LhvConnect {
 
     /**
      * @param $payments
+     *
      * @return string
      */
     public function getPaymentInitiationXML($payments)
@@ -112,6 +109,7 @@ class LhvConnect {
 
     /**
      * @param $ddoc
+     *
      * @return ResponseInterface
      */
     public function makePaymentInitiationRequest($ddoc)
@@ -119,12 +117,11 @@ class LhvConnect {
         $body = fopen($ddoc, 'r');
 
         $headers = [
-            'Content-Type' => 'application/vnd.etsi.asic-e+zip'
+            'Content-Type' => 'application/vnd.etsi.asic-e+zip',
         ];
 
         $request = new PaymentInitiationRequest($this->client, $this->configuration, [], $body, $headers);
 
         return $request->sendRequest();
     }
-
 }
