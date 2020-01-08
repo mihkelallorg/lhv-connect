@@ -2,12 +2,7 @@
 
 namespace Mihkullorg\LhvConnect\Requests;
 
-use DateTime;
-use Exception;
 use GuzzleHttp\Client;
-use KG\DigiDoc\Api;
-use KG\DigiDoc\Soap\Client as DigiDocClient;
-use SimpleXMLElement;
 
 abstract class FullRequest extends BasicRequest
 {
@@ -26,7 +21,7 @@ abstract class FullRequest extends BasicRequest
     }
 
     /**
-     * Return the xml as a string
+     * Return the xml as a string.
      *
      * @return string
      */

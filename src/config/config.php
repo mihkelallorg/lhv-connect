@@ -1,39 +1,39 @@
 <?php
 
 return [
-    'tmp_folder' => "/tmp",
-    'accounts' => [
+    'tmp_folder' => '/tmp',
+    'accounts'   => [
         'name' => [
-            'url' => "https://connect.lhv.eu",
+            'url'  => 'https://connect.lhv.eu',
             'cert' => [ // Your pivate key + LHV public certificate is combined into one file
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
-            'IBAN' => "",
-            'name' => "",
-            'bic'  => "LHVBEE22",
+            'IBAN' => '',
+            'name' => '',
+            'bic'  => 'LHVBEE22',
         ],
         'name2' => [
-            'url' => "https://connect.lhv.eu",
+            'url'  => 'https://connect.lhv.eu',
             'cert' => [ // Your pivate key + LHV public certificate is combined into one file
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
-            'IBAN' => "",
+            'IBAN' => '',
         ],
         'name3' => [
-            'url' => "https://connect.lhv.eu",
+            'url'  => 'https://connect.lhv.eu',
             'cert' => [ // LHV public certificate (lhv_public.crt / lhv_public.pem / ...)
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
             'ssl_key' => [ // Your pivate key (private.key / priv.pem / ...)
-                'path' => "",
-                'password' => "",
+                'path'     => '',
+                'password' => '',
             ],
-            'IBAN' => "",
-            'name' => "",
-            'bic'  => "LHVBEE22",
+            'IBAN' => '',
+            'name' => '',
+            'bic'  => 'LHVBEE22',
         ],
     ],
 
