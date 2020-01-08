@@ -5,8 +5,8 @@ namespace Mihkullorg\LhvConnect\Requests;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 
-abstract class BasicRequest {
-
+abstract class BasicRequest
+{
     protected $url;
     protected $method;
     protected $client;
@@ -47,6 +47,13 @@ abstract class BasicRequest {
             RequestOptions::BODY => $this->body,
             RequestOptions::HEADERS => $this->headers,
         ];
+
+        if(!empty($this->configuration['ssl_key']['path'])) {
+            $options[RequestOptions::SSL_KEY] = [
+                $this->configuration['ssl_key']['path'],
+                $this->configuration['ssl_key']['password'],
+            ];
+        }
 
         return $options;
     }

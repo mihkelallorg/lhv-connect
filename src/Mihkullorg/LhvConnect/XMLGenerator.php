@@ -4,8 +4,11 @@ namespace Mihkullorg\LhvConnect;
 
 use DateTime;
 use SimpleXMLElement;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
-class XMLGenerator {
+class XMLGenerator
+{
 
     /**
      * Transforms the xml array to XML
@@ -15,8 +18,8 @@ class XMLGenerator {
      */
     protected static function array_to_xml(array $data, SimpleXMLElement &$xml_data)
     {
-        foreach( $data as $key => $value ) {
-            if( is_array($value) ) {
+        foreach ($data as $key => $value) {
+            if (is_array($value)) {
                 $subnode = $xml_data->addChild(constant("Mihkullorg\\LhvConnect\\Tag::$key"));
                 self::array_to_xml($value, $subnode);
             } else {
@@ -27,8 +30,7 @@ class XMLGenerator {
                  * ONLY SUPPORTS EUR ATM
                  * TODO: Add support for other currencies
                  */
-                if ($key == Tag::INSTRUCTED_AMOUNT)
-                {
+                if ($key == Tag::INSTRUCTED_AMOUNT) {
                     $xml_data->$key->addAttribute('Ccy', 'EUR');
                 }
             }
@@ -46,25 +48,22 @@ class XMLGenerator {
 
         $sum = 0;
 
-        foreach($data['payments'] as $payment)
-        {
+        foreach ($data['payments'] as $payment) {
             $sum += $payment['sum'];
         }
 
         $xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\" 
-xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" 
+<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03\"
+xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
 xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd\"><$xmlTag></$xmlTag></Document>");
 
-        self::array_to_xml(self::generatePaymentInitiationGroupHeaderXml(count($data['payments']), $sum, array_get($data, 'initiator', '')), $xml->$xmlTag);
+        self::array_to_xml(self::generatePaymentInitiationGroupHeaderXml(count($data['payments']), $sum, Arr::get($data, 'initiator', '')), $xml->$xmlTag);
 
-        foreach ($data['payments'] as $payment)
-        {
+        foreach ($data['payments'] as $payment) {
             self::array_to_xml(self::generatePaymentInitiationPaymentXml($payment, $configuration), $xml->$xmlTag);
         }
 
         return $xml->asXML();
-
     }
 
     private static function generatePaymentInitiationPaymentXml($payment, $configuration)
@@ -118,8 +117,7 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
             ],
         ];
 
-        if (isset($payment['ref_nr']) && strlen($payment['ref_nr']))
-        {
+        if (isset($payment['ref_nr']) && strlen($payment['ref_nr'])) {
             $xml["PAYMENT_INFORMATION"]["CREDIT_TRANSFER_TRANSACTION_INFORMATION"]["REMITTANCE_INFORMATION"]["STRUCTURED"] = [
                 "BENEFICIARY_REFERENCE_INFORMATION" => [
                     "REFERENCE" => $payment['ref_nr'],
@@ -134,7 +132,7 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
     {
         return [
             "GROUP_HEADER" => [
-                "MESSAGE_IDENTIFICATION"    => str_random(16),
+                "MESSAGE_IDENTIFICATION"    => Str::random(16),
                 "CREATION_DATETIME"         => (new DateTime())->format(DateTime::ATOM),
                 "NUMBER_OF_TRANSACTIONS"    => $count,
                 "CONTROL_SUM"               => $sum,
@@ -144,5 +142,4 @@ xsi:schemaLocation=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001
             ],
         ];
     }
-
 }
