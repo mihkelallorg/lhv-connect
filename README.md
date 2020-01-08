@@ -19,7 +19,7 @@ and the array with the key 'test' is passed on.
 
 Test the connection. If there's no connection, Exception with 503 should be thrown.
 
-    $lhv->makeHeartheatGetRequest();
+    $lhv->makeHeartbeatGetRequest();
 
 Retrieve a message from LHV inbox
 
