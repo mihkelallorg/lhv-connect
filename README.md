@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-    $ composer require mihkelallorg/lhv-connect
+    $ composer require mihkullorg/lhv-connect
 
 NB! Service provider Mihkullorg\LhvConnect\LaravelLhvConnectServiceProvider::class is automatically registered.
 
