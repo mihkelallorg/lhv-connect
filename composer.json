@@ -38,5 +38,6 @@
                 "Mihkullorg\\LhvConnect\\LaravelLhvConnectServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
