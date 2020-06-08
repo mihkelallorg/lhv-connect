@@ -11,8 +11,8 @@
     }],
     "require": {
         "php": "^7.2.5",
-        "illuminate/config": "^7.0",
-        "illuminate/support": "^7.0",
+        "illuminate/config": "^6.0 || ^7.0",
+        "illuminate/support": "^6.0 || ^7.0",
         "guzzlehttp/guzzle": "^6.5",
         "ext-simplexml": "*"
     },
@@ -30,6 +30,9 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.0"
+        },
         "laravel": {
             "providers": [
                 "Mihkullorg\\LhvConnect\\LaravelLhvConnectServiceProvider"
