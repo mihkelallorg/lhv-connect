@@ -1,4 +1,4 @@
-# LHV CONNECT API package for Laravel 6
+# LHV CONNECT API package for Laravel 6+
 
 ## Quickstart
 
